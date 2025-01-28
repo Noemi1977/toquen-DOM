@@ -103,6 +103,8 @@
     border: solid var(--color-bottoms);
 }
 
+
+
 /********INSTRUMENTS********/
 .instruments {
     background-color: var(--color-background-grey);
@@ -138,7 +140,6 @@
     gap: 20px;
 }
 
-/* Карточка инструмента */
 .card {
     background-color: white;
     padding: 20px;
@@ -156,7 +157,7 @@
     transform: scale(1.05);
 }
 
-/* Иконка инструмента */
+
 .card__icon {
     width: 80px;
     height: auto;
@@ -164,7 +165,7 @@
     grid-column: 1;
 }
 
-/* Контейнер с текстом */
+
 .card__content {
     display: flex;
     justify-content: center;
@@ -172,13 +173,13 @@
     gap: 10px;
 }
 
-/* Название инструмента */
+
 .card__title {
     font-size: 20px;
         text-align: center;
     }
 
-/* BOTTOM */
+
 .card__button {
     background-color: var(--color-background-white);
     color: black;
