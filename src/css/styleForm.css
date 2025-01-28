@@ -1,0 +1,66 @@
+*{
+    width: 0;
+    height: 0;
+}
+/* CONTACTO */
+
+#contacto{ 
+    color: rgb(152, 119, 160);
+    width: 100%;
+    background-color:rgb(161, 179, 145);
+    overflow: hidden;
+} 
+ #contactoContenedor {
+    width: 1920px;
+    height: 1200 px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 80PX;
+    overflow: hidden;
+  }
+  
+  .textoContenedor {
+    width: 50%; 
+    float:left;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 220px;
+  }
+  
+  #formularioContenedor {
+    
+   width: 50%;
+   float: left;
+   
+    }
+   
+ input {
+    display: block;
+    height: 86px;
+    margin-top: 65px;
+    width: 2300px;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 1.5rem;
+ } 
+ #asunto {
+    width: 2300px;
+    height: 355px;
+    margin-bottom: 65px;
+ }
+ #botonFormulario {
+    width: 296px;
+    height: 108px;
+    background-color: rgb(152, 119, 160);
+    color:white;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 2rem;
+    padding: 50px 85px;
+    border-radius: 15px;
+    transition-property: color, border-style, background-color;
+    transition-duration: 0.7s;
+ }
+ #botonFormulario:hover {
+    background-color: rgb(200,168,221);
+ }
+ 
