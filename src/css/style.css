@@ -1,39 +1,204 @@
-.container {
+:root {
+--color-bottom-stroke: #D29E2E;
+--color-bottoms: #ffcc66;
+--color-bottoms-light: #FEF5E6;
+--color-background-grey: #C4C4C4;
+--color-background-black: #2B2B2B;
+--color-background-white: #ffffff;
+--font-size-h1: 36px;
+
+}
+.body {
+    background-color: var(--color-background-white);
+}
+
+.welcome-page {
     position: relative;
     width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 50px;
 }
 
-.background-image {
+.welcome-page__background {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
-.overlay-text {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 24px;
+.welcome-page__content {
+    max-width: 40%;
+    color: var(--color-background-white);
+    text-align: left;
+    margin-left: 10%;
+}
+
+.welcome-page__title {
+    font-size: var(--font-size-h1);
+    margin-bottom: 32px;
+}
+
+.welcome-page__button {
+    background-color: var(--color-bottoms);
+    color: var(--color-background-black);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: solid var(--color-bottoms);
+}
+
+.welcome-page__button:hover {
+    background-color: var(--color-background-white);
+}
+
+/********"ABOUT US"*******/
+.about {
+    text-align: center;
+    padding: 36px 20px;
+}
+
+.about__title {
+    font-size: var(--font-size-h1);
+    margin-bottom: 54px;
+}
+
+.about__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.about__image {
+    width: 40%;
+    max-width: 300px;
+}
+
+.about__text {
+    width: 50%;
+    text-align: left;
+    max-width: 350px;
+}
+
+.about__button {
+    background-color: var(--color-bottoms-light);
+    border: solid var(--color-bottom-stroke);
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: solid var(--color-bottoms);
+    cursor: pointer;
+}
+
+.about__button:hover {
+    background-color: var(--color-bottoms);
+    border: solid var(--color-bottoms);
+}
+
+/********INSTRUMENTS********/
+.instruments {
+    background-color: var(--color-background-grey);
+    padding: 54px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.instruments__container {
+    width: 80%;
+    max-width: 1200px;
     text-align: center;
 }
 
-.overlay-button {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #ff6600;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+.instruments__title {
+    font-size: 32px;
+    margin-bottom: 15px;
 }
 
-.overlay-button:hover {
-    background-color: #ff4500;
+.instruments__description {
+    font-size: 16px;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+.instruments__grid {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: 20px auto;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+/* Карточка инструмента */
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 400px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Иконка инструмента */
+.card__icon {
+    width: 80px;
+    height: auto;
+    justify-self: center;
+    grid-column: 1;
+}
+
+/* Контейнер с текстом */
+.card__content {
+    display: flex;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+/* Название инструмента */
+.card__title {
+    font-size: 20px;
+        text-align: center;
+    }
+
+/* BOTTOM */
+.card__button {
+    background-color: var(--color-background-white);
+    color: black;
+    border: 2px solid #c8a45d;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+    align-self: center;
+   
+}
+
+.card__button:hover {
+    background-color: var(--color-bottom-stroke);
+    color: var(--color-background-white);
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
 }

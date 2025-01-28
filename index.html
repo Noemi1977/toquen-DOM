@@ -7,30 +7,65 @@
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-<div class="container">
-    <img src="public/image/imagenHome.svg" alt="Imagen de fondo" class="background-image">
-    <h1 class="overlay-text">Descubre tu pasión por la música con nosotros</h1>
-    <button class="overlay-button">Conócenos</button>
+<div class="welcome-page">
+    <img src="public/image/imageHome.svg" alt="Imagen de fondo" class="welcome-page__background">
+    <div class="welcome-page__content">
+        <h1 class="welcome-page__title">"Descubre tu pasión por la música con nosotros"</h1>
+        <button class="welcome-page__button">Conócenos</button>
+    </div>
 </div>
 
-<section>
-    <h1> Sobre nosotros </h1>
-
-    <p>Nuestra escuela es un lugar donde la música y la pasión se encuentran. Con métodos modernos y personalizados,
-        ayudamos a
-        nuestros estudiantes a descubrir su talento y amor por la música.
-
-        Te queremos presentar a nuestras profesoras increíbles. Para leer más, pulsa el botón.
-    </p>
+<section class="about">
+    <h1 class="about__title">Sobre nosotros</h1>
+    <div class="about__content">
+        <img src="public/image/escuelaHistoria.svg" alt="Escuela de música" class="about__image">
+        <div class="about__text">
+            <p>Nuestra escuela es un lugar donde la música y la pasión se encuentran. Con métodos modernos y
+                personalizados,
+                ayudamos a nuestros estudiantes a descubrir su talento y amor por la música.</p>
+            <p>Te queremos presentar a nuestras profesoras increíbles. Para leer más, pulsa el botón.</p>
+            <button class="about__button">Leer más</button>
+        </div>
+    </div>
 </section>
 
-<div class="container">
-    <img src="public/image/imagenHome.svg" alt="Imagen de fondo" class="background-image">
-    <h1 class="overlay-text">Los instrumentos</h1>
-    <p>¡Explora nuestros instrumentos interactivos! Cada uno te lleva a un instrumento donde podrás practicar desde la
-    comodidad de tu hogar. Ya sea el piano, el acordeón o la batería, hemos preparado herramientas para que aprendas
-    mientras te diviertes. Haz clic en tu instrumento favorito y comienza a tocar.</p>
-    
-</div>
+<section class="instruments">
+    <div class="instruments__container">
+        <h2 class="instruments__title">Los instrumentos</h2>
+        <p class="instruments__description">
+            ¡Explora nuestros instrumentos interactivos! Cada uno te lleva a un instrumento donde podrás practicar desde
+            la comodidad de tu hogar.
+            Ya sea el piano, el acordeón o la batería, hemos preparado herramientas para que aprendas mientras te
+            diviertes.
+            Haz clic en tu instrumento favorito y comienza a tocar.
+        </p>
+
+        <div class="instruments__grid">
+            <div class="card">
+                <img src="public/image/Piano-icono.png" alt="Piano" class="card__icon">
+                <h3 class="card__title">Piano</h3>
+                <button class="card__button">Probarlo</button>
+            </div>
+
+            <div class="card">
+                <img src="public/image/Tambor-icono.png" alt="Batería" class="icon card__icon">
+                <h3 class="card__title">Bateria</h3>
+                <button class="card__button">Probarlo</button>
+            </div>
+
+            <div class="card">
+                <img src="public/image/GUITARRA-icono.png" alt="Guitarra" class="icon card__icon">
+                <h3 class="card__title">Guitarra</h3>
+                <button class="card__button">Probarlo</button>
+            </div>
+
+            <div class="card">
+                <img src="public/image/Acordeon-icono.png" alt="Acordeón" class="icon card__icon">
+                <h3 class="card__title">Acordeón</h3>
+                <button class="card__button">Probarlo</button>
+            </div>
+        </div>
+    </div>
+</section>
 </body>
 </html>
