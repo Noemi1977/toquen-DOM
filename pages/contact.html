@@ -5,16 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/css/styleForm.css">
     <link rel="shortcut icon" href="/public/image/Logo negro .svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Contacto</title>
 </head>
 <body>
-    <nav>
-
-    </nav>
+  <header id="encabezado">
+      
+    <nav id="navBar">
+     <a href="index.html">
+       <img id="logo" src="/public/image/Logo negro .svg" alt="logo">
+     </a>
+     <ul id="menu">
+       <li class="elementMenu"> 
+         <a href="/index.html"> Inicio </a>
+        </li>
+       <li class="elementMenu"> 
+         <a href="/pages/about-us.html"> Sobre Nosotros </a> 
+       </li>
+       <li class="elementMenu">
+          <a href="/pages/instruments.html"> Instrumentos </a>     
+       </li>   
+       <li class="elementMenu"> 
+         <a href="/pages/contact.html">Contacto </a> 
+       </li>
+     </ul>
+   </nav>
+  </header>
+  <div class="--separator"></div> <!-- Línea personalizada -->
     <main>
-        
-
-    
+       
     <section id="contacto">
 
       <div id="contactoContenedor">
@@ -23,21 +44,22 @@
         </div>
         <form action="" id="formularioContenedor" >
           <!-- ponemos placeholder para que el usuario sepa lo que tiene que escribir en cada input -->
-            <label for="">Nombre</label>
+            <label for="">Nombre:</label>
             <input id="name"  type="text" name="name" placeholder=" Introduce tú nombre completo" required>
-            <label for="">Correo</label>
+            <label for="">Correo:</label>
             <input id="email" type="email" name="email" placeholder=" Introduce tú correo electrónico" required>
-            <label for="">Telefono</label>
+            <label for="">Telefono:</label>
             <input id="telephone" type="tel" name="telephone" placeholder=" Introduce tú número de telefono" id="telephone" required>
-            <label for="">Mensaje</label>
-            <input id="mensaje" type="text" name="mensaje" placeholder=" Mensaje" required>
+            <label for="">Mensaje:</label>
+            <input id="mensaje" type="text" name="mensaje" placeholder="Mensaje" required>
             <input id="botonFormulario" onclick="" value="Enviar">
-           
+            <p class="--logo-Form"> <img src="/public/image/Logo negro .svg" alt="logo"></p>
         </form>
-
+       
+        
     </div>
- 
-
+    
+    
     </section>
     </main>
 </body>

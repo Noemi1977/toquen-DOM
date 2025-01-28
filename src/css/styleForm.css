@@ -1,66 +1,183 @@
 *{
-    width: 0;
-    height: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background:--background ;
+    
 }
+:root {
+   --dark-brown: #1B1010;
+   --gray-brown: #2B2B2B;
+   --gold: #D29E2E;
+   --beige-light: #EAE2D4;
+   --beige-dark: #ECD3A6;
+   --background: #FEF5E6;
+}
+:root {
+   --font-primary: 'Montserrat', sans-serif;
+   --font-secondary: 'Libre Baskerville', serif;
+}
+/* .baskervville-regular {
+   font-family: "Baskervville", serif;
+   font-weight: 400;
+   font-style: normal;
+ }
+ 
+ .baskervville-regular-italic {
+   font-family: "Baskervville", serif;
+   font-weight: 400;
+   font-style: italic;
+ }
+ .montserrat {
+   font-family: "Montserrat", serif;
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-style: normal;
+ } */
+ 
+ /* ENCABEZADO */
+#encabezado{
+   width: 100%;
+   height: 150px;
+
+   
+}
+
+#logo{
+   width: auto;
+   height: 50%;
+   float:left;
+   margin-top: 20px;
+
+   margin-left:50px;
+   
+}
+
+#menu{
+   list-style: none;
+   overflow: hidden;
+   text-decoration: none;
+   float:right;
+   margin-right: 50px;
+   margin-top: 50px;
+   /* line-height: 150px;
+   transition-property: line-height;
+   transition-duration: 0.75s; */
+}
+.elementMenu{
+   float: left;
+   margin: 0px 30px;
+   
+}
+
+/* selector de combinacion (hijos) podriamos ponerlo sin >
+y seria extensible a nietos y demas pero de momento lo 
+prefiero dejar asi para controlar la herencia de uno a otro */
+.elementMenu>a{
+   
+   color: black;
+   font-family: var(--font-primary);
+   text-decoration: none;
+   transition-property: color;
+   transition-duration: 0.7s;
+   
+ }
+
+ .--separator{
+   height: 4px; /* Grosor */
+   background-color: black;
+  margin: 20px 0;  
+  width: 100%; 
+ }
+ /* .elementMenu > a:hover{
+   color:rgb(200,168,221);
+ } */
+
 /* CONTACTO */
 
-#contacto{ 
-    color: rgb(152, 119, 160);
-    width: 100%;
-    background-color:rgb(161, 179, 145);
-    overflow: hidden;
-} 
+.tituloSeccion{
+   font-weight: 400;
+   font-family: "Montserrat";
+   font-style: normal;
+   font: 28px;
+   text-align:center;
+   margin-top: 50px;
+   padding-bottom: 20px;
+   
+}
+
+
+
  #contactoContenedor {
-    width: 1920px;
-    height: 1200 px;
+    width: 1440px;
+    height: 700 px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 80px;
-    margin-bottom: 80PX;
-    overflow: hidden;
+    margin-top: 40px;
+    margin-bottom: 40PX;
+    /* overflow: hidden; */
   }
   
   .textoContenedor {
     width: 50%; 
-    float:left;
-    font-family: 'ABeeZee', sans-serif;
-    font-size: 1.5rem;
-    margin-top: 220px;
+    float:center;
+    margin-top: 20px;
   }
   
-  #formularioContenedor {
+  /* #formularioContenedor {
     
    width: 50%;
    float: left;
    
-    }
-   
+    } */
+   label{
+      margin: 20px;
+      padding: 20px;
+      display: flex;
+      font-family: "Montserrat", serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 24px;
+      
+   }
  input {
     display: block;
-    height: 86px;
+    height: 82px;
     margin-top: 65px;
-    width: 2300px;
-    font-family: 'ABeeZee', sans-serif;
-    font-size: 1.5rem;
+    width: 700px;
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    border-radius: 10px;
  } 
- #asunto {
-    width: 2300px;
-    height: 355px;
+ #mensaje {
+    width: 700px;
+    height: 154px;
     margin-bottom: 65px;
+    text-align: justify;
+
  }
  #botonFormulario {
-    width: 296px;
-    height: 108px;
-    background-color: rgb(152, 119, 160);
-    color:white;
-    font-family: 'ABeeZee', sans-serif;
-    font-size: 2rem;
-    padding: 50px 85px;
-    border-radius: 15px;
+    width: 138px;
+    height: 40px;
+    background-color: rgb(210, 158, 46);
+    color:black;
+    font-family: "Baskervville", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin-left:20%;
+    border-radius: 10px;
     transition-property: color, border-style, background-color;
     transition-duration: 0.7s;
+
  }
  #botonFormulario:hover {
-    background-color: rgb(200,168,221);
+    background-color: rgb(236,211,166);
+ }
+ .--logo-Form{
+
+   margin-left: 60%;
  }
  
