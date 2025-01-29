@@ -1,183 +1,168 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background:--background ;
-    
-}
+/* VARIABLES GENERALES COLOR */
 :root {
-   --dark-brown: #1B1010;
-   --gray-brown: #2B2B2B;
-   --gold: #D29E2E;
-   --beige-light: #EAE2D4;
-   --beige-dark: #ECD3A6;
-   --background: #FEF5E6;
-}
-:root {
+   --color-bottom-stroke: #D29E2E;
+   --color-bottoms: #ffcc66;
+   --color-bottoms-light: #FEF5E6;
+   --color-background-grey: #C4C4C4;
+   --color-background-black: #2B2B2B;
+   --color-background-white: #ffffff; 
+   /*VARIABLES FONTS TIPOGRAFIAS*/
    --font-primary: 'Montserrat', sans-serif;
    --font-secondary: 'Libre Baskerville', serif;
 }
-/* .baskervville-regular {
-   font-family: "Baskervville", serif;
-   font-weight: 400;
-   font-style: normal;
- }
- 
- .baskervville-regular-italic {
-   font-family: "Baskervville", serif;
-   font-weight: 400;
-   font-style: italic;
- }
- .montserrat {
-   font-family: "Montserrat", serif;
-   font-optical-sizing: auto;
-   font-weight: 400;
-   font-style: normal;
- } */
- 
- /* ENCABEZADO */
-#encabezado{
-   width: 100%;
-   height: 150px;
 
-   
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
-#logo{
-   width: auto;
-   height: 50%;
-   float:left;
-   margin-top: 20px;
-
-   margin-left:50px;
-   
+body{
+   background-color: var(--color-background-white); 
+   color: var(--color-background-black);
+   font-size: 24px;
+   line-height: 1.5;
 }
 
-#menu{
-   list-style: none;
-   overflow: hidden;
-   text-decoration: none;
-   float:right;
-   margin-right: 50px;
-   margin-top: 50px;
-   /* line-height: 150px;
-   transition-property: line-height;
-   transition-duration: 0.75s; */
-}
-.elementMenu{
-   float: left;
-   margin: 0px 30px;
-   
-}
-
-/* selector de combinacion (hijos) podriamos ponerlo sin >
-y seria extensible a nietos y demas pero de momento lo 
-prefiero dejar asi para controlar la herencia de uno a otro */
-.elementMenu>a{
-   
-   color: black;
+/* HEADER - NAV */
+.--main-header{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
    font-family: var(--font-primary);
+   padding: 16px 32px;
+   background-color: var(--color-background-white);
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombreado header-nav */
+}
+
+/*LOGO BLACK NAV*/
+.--logo-nav {
+   width: 120px;
+   height: 110px;
+}
+
+/*LINKS BARRA DE NAVEGACION*/
+.--nav-links {
+   list-style: none;
+   display: flex;
+   gap: 60px;
+}
+
+.--nav-links li a {
    text-decoration: none;
-   transition-property: color;
-   transition-duration: 0.7s;
-   
- }
+   color: var(--color-background-black);
+   font-weight:normal;
+   transition: color 0.3s;
+}
 
- .--separator{
-   height: 4px; /* Grosor */
-   background-color: black;
-  margin: 20px 0;  
-  width: 100%; 
- }
- /* .elementMenu > a:hover{
-   color:rgb(200,168,221);
- } */
+.--nav-links li a:hover {
+   color: var(--color-bottom-stroke);
+}
 
-/* CONTACTO */
+#--contacto-contenedor {
+   width: 80%; /* Para que se adapte mejor a distintos tamaños de pantalla */
+   max-width: 800px; /* Limita el ancho máximo */
+   height: auto; /* Ajusta la altura según el contenido */
+   margin: 40px auto; /* Centra horizontalmente */
+   display: flex;
+   flex-direction: column; /* Alinea los elementos en columna */
+   align-items: center; /* Centra el contenido horizontalmente */
+   justify-content: center; /* Centra verticalmente */
+   text-align: center;
+}
 
-.tituloSeccion{
-   font-weight: 400;
-   font-family: "Montserrat";
-   font-style: normal;
-   font: 28px;
-   text-align:center;
-   margin-top: 50px;
-   padding-bottom: 20px;
-   
+form {
+   display: flex;
+   flex-direction: column; /* Los elementos del formulario en columna */
+   align-items: center; /* Centra los inputs */
+   width: 100%; /* Ocupará el ancho del contenedor */
 }
 
 
+input {
+   width: 90%; /* Ajustable para pantallas más pequeñas */
+   max-width: 700px; /* No excede el ancho definido */
+   height: 86px;
+   border-radius: 10px;
+}
 
- #contactoContenedor {
-    width: 1440px;
-    height: 700 px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-    margin-bottom: 40PX;
-    /* overflow: hidden; */
-  }
-  
-  .textoContenedor {
-    width: 50%; 
-    float:center;
-    margin-top: 20px;
-  }
-  
-  /* #formularioContenedor {
-    
-   width: 50%;
-   float: left;
+#--mensaje {
+   width: 90%;
+   max-width: 700px;
+   height: 355px;
+   margin-bottom: 65px;
+}
+
+#--botonFormulario {
+   margin-left: 0; /* Elimina la alineación a la izquierda */
+   margin-top: 20px;
+   cursor: pointer;
+}
+
+.--logo-Form {
+   margin-left: 0; /* Centra el logo */
+   text-align: right;
+}
+
+ 
+ /*SUPER FOOTER TROOPER*/
+
+.--main-footer {
+   background-color: var(--color-background-black);
+   display: flex;
+   justify-content: space-between; /* Distribuye los elementos horizontalmente */
+   align-items: center; /* Alinea los elementos verticalmente */
+   flex-wrap: wrap; /* Permite que los elementos se acomoden si no caben en una línea */
+   color: var(--color-background-white);
+   padding: 20px;
+ }
+ .--logo-footer {
+   display: flex;
+   align-items: center; /* Alinea logo y dirección en una línea */
+   gap: 60px; /* Espacio entre el logo y el address */
    
-    } */
-   label{
-      margin: 20px;
-      padding: 20px;
-      display: flex;
-      font-family: "Montserrat", serif;
-      font-weight: 400;
-      font-style: normal;
-      font-size: 24px;
-      
-   }
- input {
-    display: block;
-    height: 82px;
-    margin-top: 65px;
-    width: 700px;
-    font-family: "Montserrat", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 24px;
-    border-radius: 10px;
- } 
- #mensaje {
-    width: 700px;
-    height: 154px;
-    margin-bottom: 65px;
-    text-align: justify;
+}
+ 
+ .--logo-footer img {
+   max-width: 120px; /* Ajusta el tamaño del logo */
+ }
+ 
+ .--address {
+   display: flex;
+   flex-direction: column; /* Coloca los textos en columna */
+   font-style: normal;
+   gap: 5px; /* Espaciado entre líneas de dirección */
+   list-style: none;
+}
 
+ .--footer-links ul {
+   list-style: none;
+   padding: 30
+   px;
+   display:block;
+   gap: 30px; /* Espaciado entre enlaces */
  }
- #botonFormulario {
-    width: 138px;
-    height: 40px;
-    background-color: rgb(210, 158, 46);
-    color:black;
-    font-family: "Baskervville", serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-    margin-left:20%;
-    border-radius: 10px;
-    transition-property: color, border-style, background-color;
-    transition-duration: 0.7s;
-
+ 
+ .--footer-links ul li a {
+   color: var(--color-background-white);
+   text-decoration: none;
+   transition: color 0.3s;
  }
- #botonFormulario:hover {
-    background-color: rgb(236,211,166);
+ 
+ .--footer-links ul li a:hover {
+   color: var(--color-bottom-stroke);
  }
- .--logo-Form{
-
-   margin-left: 60%;
+ 
+ .--main-footer p {
+   text-align: center;
+   width: 100%; /* Asegura que el copyright ocupe toda la fila */
+   margin-top: 10px;
  }
+ .--rrss-footer i {
+ line-height: 100px;
+ color:var(--color-background-white);
+ font-size: 2rem;
+ padding: 50px 50px;
+}
+ 
  
