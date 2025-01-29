@@ -59,7 +59,7 @@
     background-color: var(--color-background-white);
 }
 
-/********"ABOUT US"*******/
+/********ABOUT US*******/
 .about {
     text-align: center;
     padding: 36px 20px;
@@ -93,7 +93,7 @@
 .about__button {
     background-color: var(--color-bottoms-light);
     border: solid var(--color-bottom-stroke);
-    color: black;
+    color: var(--color-text-dark);
     padding: 10px 20px;
     border-radius: 5px;
     border: solid var(--color-bottoms);
@@ -151,9 +151,9 @@
     display: grid;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out;
-    grid-template-columns: 40% 1fr;
-    grid-template-rows: auto auto;
-    
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
 }
 
 .card:hover {
@@ -164,9 +164,10 @@
 .card__icon {
     width: 80px;
     height: auto;
-    justify-items: left;
     grid-row: span 2;
+    justify-items: center;
     align-items: center;
+    justify-self: center;
 }
 
 
@@ -175,6 +176,9 @@
     text-align: left;
     grid-column: 2;
     grid-row: 1;
+    align-self: center;
+    align-items: end;
+    align-content: end;
     }
 
 
@@ -189,8 +193,10 @@
     font-size: 14px;
     transition: 0.3s;
     align-self: center;
+    justify-self: start;
     grid-column: 2;
     grid-row: 2;
+    align-items: start;
    
 }
 
