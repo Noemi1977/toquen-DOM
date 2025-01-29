@@ -1,0 +1,138 @@
+/* VARIABLES GENERALES COLOR */
+:root {
+    --color-bottom-stroke: #D29E2E;
+    --color-bottoms: #ffcc66;
+    --color-bottoms-light: #FEF5E6;
+    --color-background-grey: #C4C4C4;
+    --color-background-black: #2B2B2B;
+    --color-background-white: #ffffff; 
+    /*VARIABLES FONTS TIPOGRAFIAS*/
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Libre Baskerville', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-background-white); 
+    color: var(--color-background-black);
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+/* HEADER - NAV */
+.main-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font-primary);
+    padding: 16px 32px;
+    background-color: var(--color-background-white);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombreado header-nav */
+}
+
+/*LOGO BLACK NAV*/
+.logo-nav svg {
+    width: 120px;
+    height: 110px;
+}
+
+/*LINKS BARRA DE NAVEGACION*/
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--color-background-black);
+    font-weight:normal;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: var(--color-bottom-stroke);
+}
+
+/*CONTENIDO PRINCIPAL*/
+.contenido{
+    text-align: center;
+    padding: 48px 32px;
+}
+
+.contenido h1{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 32px;
+    margin-bottom: 16px;
+    color: var(--color-background-black);
+}
+
+.contenido p{
+    font-size: 30px;
+}
+
+/*ILUSTRACIÓN*/
+
+.ilustracion{
+    width:auto;
+    text-align: center;
+}
+
+.illustracion img {
+    width: 100%;
+    max-width: 400px;
+}
+
+/*SUPER FOOTER TROOPER*/
+.main-footer {
+    background-color: var(--color-background-black);
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos horizontalmente */
+    align-items: center; /* Alinea los elementos verticalmente */
+    flex-wrap: wrap; /* Permite que los elementos se acomoden si no caben en una línea */
+    color: var(--color-background-white);
+    padding: 50px;
+  }
+  
+   address {
+    display: block;
+    padding: 0;
+    font-style: normal;
+    gap: 30px; /* Espaciado entre enlaces */
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+    display:block;
+    gap: 30px; /* Espaciado entre enlaces */
+  }
+  
+  .footer-links ul li a {
+    color: var(--color-background-white);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-links ul li a:hover {
+    color: var(--color-bottom-stroke);
+  }
+
+/*LOGO FOOTER BLANCO*/
+
+.logo-footer img {
+    max-width: 120px; /* Ajusta el tamaño del logo */
+  }
+  
+/*COPYRIGHT*/
+.main-footer p {
+    text-align: center;
+    width: 100%; /* Asegura que el copyright ocupe toda la fila */
+    margin-top: 10px;
+    color: var(--color-background-white);
+  }
