@@ -8,6 +8,8 @@
 --color-text-light: #ffffff;
 --color-text-dark: #2B2B2B;
 --font-size-h1: 36px;
+--font-primary: 'Montserrat', sans-serif;
+--font-secondary: 'Libre Baskerville', serif;
 
 /* HEADER - NAV */
 
@@ -115,6 +117,7 @@
 .welcome-page__title {
     font-size: var(--font-size-h1);
     margin-bottom: 32px;
+    font-family: var(--font-secondary)
 }
 
 .welcome-page__button {
@@ -124,6 +127,7 @@
     border-radius: 5px;
     cursor: pointer;
     border: solid var(--color-bottoms);
+    font-family: var(--font-primary)
 }
 
 .welcome-page__button:hover {
@@ -139,6 +143,7 @@
 .about__title {
     font-size: var(--font-size-h1);
     margin-bottom: 54px;
+    font-family: var(--font-secondary)
 }
 
 .about__content {
@@ -160,6 +165,7 @@
     width: 50%;
     text-align: left;
     max-width: 350px;
+    font-family: var(--font-primary)
 }
 
 .about__button {
@@ -171,6 +177,7 @@
     border: solid var(--color-bottoms);
     cursor: pointer;
     margin-top: 24px;
+    font-family: var(--font-primary)
 }
 
 .about__button:hover {
@@ -198,12 +205,14 @@
     font-size: 32px;
     margin-bottom: 54px;
     text-align: center;
+    font-family: var(--font-secondary)
 }
 
 .instruments__description {
     font-size: 16px;
     max-width: 800px;
     margin: 0 auto 54px;
+    font-family: var(--font-primary)
 }
 
 .instruments__grid {
@@ -246,13 +255,14 @@
 
 
 .card__title {
-    font-size: 20px;
+    font-size: 24px;
     text-align: left;
     grid-column: 2;
     grid-row: 1;
     align-self: center;
     align-items: end;
     align-content: end;
+    font-family: var(--font-secondary)
     }
 
 
@@ -271,6 +281,8 @@
     grid-column: 2;
     grid-row: 2;
     align-items: start;
+    font-family: var(--font-primary)
+    
    
 }
 
@@ -296,12 +308,13 @@ form {
 }
 
 label {
-    font-size: 18px;
+    font-size: 16px;
     text-align: left;
     width: 400px;
     margin-top: 20px;
     margin-bottom: 10px;
     align-content: center;
+    font-family: var(--font-primary)
 }
 
 input,
@@ -341,7 +354,7 @@ textarea {
     font-size: 14px;
     transition: 0.3s;
     margin-top: 36px;
-    
+    font-family: var(--font-primary)
 
 }
 
