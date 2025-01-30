@@ -10,6 +10,8 @@
 --font-size-h1: 36px;
 
 /* HEADER - NAV */
+
+
     .main-header {
         display: flex;
         align-items: center;
@@ -22,7 +24,7 @@
     }
 
     /*LOGO BLACK NAV*/
-    .logo-nav svg {
+    .logo-nav img {
         width: 120px;
         height: 110px;
     }
@@ -45,6 +47,38 @@
         color: var(--color-bottom-stroke);
     }
 
+    /* BURGER */
+    .burger-menu {
+            display: none;
+            font-size: 32px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+    
+    /* ADAPTATION */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 80px;
+                right: 0;
+                background: var(--color-background-white);
+                width: 100%;
+                padding: 20px 0;
+                text-align: center;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+    
+            .nav-links.active {
+                display: flex;
+            }
+    
+            .burger-menu {
+                display: block;
+            }
+        }
 
 }
 .body {
