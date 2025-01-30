@@ -9,6 +9,43 @@
 --color-text-dark: #2B2B2B;
 --font-size-h1: 36px;
 
+/* HEADER - NAV */
+    .main-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: var(--font-primary);
+        padding: 16px 32px;
+        background-color: var(--color-background-white);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        /* Sombreado header-nav */
+    }
+
+    /*LOGO BLACK NAV*/
+    .logo-nav svg {
+        width: 120px;
+        height: 110px;
+    }
+
+    /*LINKS BARRA DE NAVEGACION*/
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 60px;
+    }
+
+    .nav-links li a {
+        text-decoration: none;
+        color: var(--color-background-black);
+        font-weight: normal;
+        transition: color 0.3s;
+    }
+
+    .nav-links li a:hover {
+        color: var(--color-bottom-stroke);
+    }
+
+
 }
 .body {
     background-color: var(--color-background-white);
