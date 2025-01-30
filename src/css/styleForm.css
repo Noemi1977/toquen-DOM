@@ -12,16 +12,15 @@
 }
 
 * {
-   margin: 0;
-   padding: 0;
    box-sizing: border-box;
 }
 
-body{
+body, html{
    background-color: var(--color-background-white); 
    color: var(--color-background-black);
    font-size: 24px;
    line-height: 1.5;
+   height: 100%;
 }
 
 /* HEADER - NAV */
@@ -33,6 +32,7 @@ body{
    padding: 16px 32px;
    background-color: var(--color-background-white);
    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombreado header-nav */
+   overflow-x: hidden; 
 }
 
 /*LOGO BLACK NAV*/
@@ -59,7 +59,7 @@ body{
    color: var(--color-bottom-stroke);
 }
 
-#--contacto-contenedor {
+ #--contacto-contenedor {
    width: 80%; /* Para que se adapte mejor a distintos tamaños de pantalla */
    max-width: 800px; /* Limita el ancho máximo */
    height: auto; /* Ajusta la altura según el contenido */
@@ -69,43 +69,110 @@ body{
    align-items: center; /* Centra el contenido horizontalmente */
    justify-content: center; /* Centra verticalmente */
    text-align: center;
+} 
+
+h2{
+   font-family: var(--font-secondary);
+   font-size: 36px;
+}
+
+
+.--text-container {
+   width: 50%;
+   margin: 50px auto;
+   text-align: center;
+}
+
+.form-container {
+   position: relative; /* Esto permite que el logo se posicione dentro de este contenedor */
+   width: 90%;
+   max-width: 700px;
+   margin: 0 auto; /* Centra el formulario */
+   overflow-x: hidden; 
 }
 
 form {
    display: flex;
    flex-direction: column; /* Los elementos del formulario en columna */
    align-items: center; /* Centra los inputs */
-   width: 100%; /* Ocupará el ancho del contenedor */
+   width: 100%;/*Ocupará el ancho del contenedor*/
+   overflow-x: hidden; 
+}
+.input-container{
+   display: flex;
+   flex-direction: column; /* Pone el label arriba del input */
+   align-items: flex-start; /* Alinea a la izquierda */
+   margin-left: 100px; /* Aplica margen a todo el bloque */
+   width: 90%; /* Ajusta el ancho del contenedor */
+   max-width: 700px; /* Limita el ancho máximo */
 }
 
-
 input {
-   width: 90%; /* Ajustable para pantallas más pequeñas */
+   width: 100%; /* Ajustable para pantallas más pequeñas */
    max-width: 700px; /* No excede el ancho definido */
    height: 86px;
    border-radius: 10px;
+   padding: 10px;
+   font-size: 24px;
+   border:1px solid #ccc;
+   margin-top: 20px; 
+   margin-bottom: 20px;
+   text-align: left;
 }
 
-#--mensaje {
-   width: 90%;
+label {
+   font-size: 24px;
+   margin-top: 10px;
+   font-family: var(--font-primary);
+}
+
+input::placeholder {
+   font-size: 24px; 
+   color:var(--color-background-grey) 
+}
+
+#mensaje {
+   width: 100%;
    max-width: 700px;
    height: 355px;
    margin-bottom: 65px;
 }
 
-#--botonFormulario {
-   margin-left: 0; /* Elimina la alineación a la izquierda */
+.--form-button {
+   font-family: var(--font-primary);
+   background-color:  var(--color-background-white);
+   color: black;
+   border: 2px solid var(--color-bottom-stroke);
+   border-radius: 10 px;
+   max-width: 100px;
+   font-size: 18px;
+   transition: 0.3s;
    margin-top: 20px;
-   cursor: pointer;
+   cursor:pointer;
+   text-align: center;
+   width: 138px;
+   height: 40px;
+
+}
+.--form-button:hover {
+   background-color: var(--color-bottom-stroke);
+       color: var(--color-background-white);
 }
 
-.--logo-Form {
-   margin-left: 0; /* Centra el logo */
-   text-align: right;
-}
+.--logo-form {
 
+   margin-top: 10px;
+   width: 120px;
+   padding-right:500px;  
+}
+#--ok-mesaje{
+   display: none;
+   font-size: 36px; 
+   color:var(--color-bottom-stroke); 
+   text-align: center;
+}
  
- /*SUPER FOOTER TROOPER*/
+ /*FOOTER*/
 
 .--main-footer {
    background-color: var(--color-background-black);
@@ -115,6 +182,7 @@ input {
    flex-wrap: wrap; /* Permite que los elementos se acomoden si no caben en una línea */
    color: var(--color-background-white);
    padding: 20px;
+   overflow-x: hidden; 
  }
  .--logo-footer {
    display: flex;
@@ -137,8 +205,7 @@ input {
 
  .--footer-links ul {
    list-style: none;
-   padding: 30
-   px;
+   padding: 30px;
    display:block;
    gap: 30px; /* Espaciado entre enlaces */
  }
@@ -164,5 +231,110 @@ input {
  font-size: 2rem;
  padding: 50px 50px;
 }
+.--rrss-footer i:hover{
+   color:var(--color-bottom-stroke)
+}
  
- 
+/* Media queries */
+
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+   /* Cambiar la alineación del logo en el header */
+   .--logo-nav {
+       width: 100px; /* Reduce tamaño del logo */
+       height: 80px;
+   }
+
+   .--nav-links {
+       flex-direction: column; /* Alineo los links en una columna */
+       gap: 20px;
+       text-align: center;
+   }
+
+   /* Modificar tamaño de la fuente en los inputs */
+   input {
+       font-size: 20px; /* Reducir tamaño de la fuente para pantallas pequeñas */
+   }
+
+   /* Ajustar márgenes y tamaños de los formularios */
+   .input-container {
+       width: 100%; /* Los campos del formulario ocupan el 100% */
+       margin-left: 0; /* Eliminar márgenes laterales */
+   }
+
+   .--form-button {
+      
+       max-width: none; /* Eliminar límite de tamaño */
+   }
+
+   .--logo-form {
+       width: 100px;
+       margin-top: 20px; /* Añadir espacio entre el logo y el formulario */
+       align-self: center; /* Centrar el logo */
+   }
+
+   .--text-container {
+       width: 90%; /* Reducir el ancho de los textos en el formulario */
+   }
+
+   /* Ajustar el pie de página */
+   .--main-footer {
+       flex-direction: column;
+       text-align: center;
+   }
+
+   .--logo-footer {
+       gap: 20px; /* Reducir espacio entre el logo y la dirección */
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .--address {
+       gap: 10px;
+   }
+
+   .--rrss-footer i {
+       font-size: 1.5rem; /* Reducir tamaño de los iconos */
+       padding: 30px;
+   }
+}
+
+/* Pantallas grandes (tabletas y PCs) */
+@media (min-width: 769px) {
+   /* Logo y enlaces del header */
+   .--logo-nav {
+       width: 150px;
+       height: 120px;
+   }
+
+   .--nav-links {
+       flex-direction: row;
+       gap: 60px;
+   }
+
+   .input-container {
+       width: 90%; /* Usar el 90% del ancho en pantallas más grandes */
+   }
+
+   .--form-button {
+       width: 150px;
+       max-width: 150px; /* Asegura que el botón no se expanda demasiado */
+   }
+
+   /* Logo en el formulario */
+   .--logo-form {
+       align-self: flex-end; /* Mover el logo a la derecha */
+   }
+
+   .--main-footer {
+       flex-direction: row; /* Mostrar los elementos del footer en fila */
+       justify-content: space-between; /* Espacio entre los elementos */
+   }
+
+   .--logo-footer {
+       gap: 60px;
+       flex-direction: row;
+   }
+}
+

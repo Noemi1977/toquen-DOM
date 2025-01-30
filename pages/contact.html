@@ -31,34 +31,38 @@
 </header>
        
     <section id="--contacto">
-      <div id="--contacto-contenedor">
-        <div class="--texto-contenedor">
+      
+        <div class="--text-container">
           <h2>¿Quieres preguntarnos algo?</h2>
-        </div>
-        <form action="" id="--formulario-contenedor" >
+        </div>      
+        <div class="--form-container" >
+          <form action="" >
           <!-- ponemos placeholder para que el usuario sepa lo que tiene que escribir en cada input -->
-          <div class="--form-group">
-            <label for="">Nombre:</label>
+          <div class="input-container">
+            <label for="nombre">Nombre:</label>
             <input id="--name"  type="text" name="name" placeholder=" Introduce tú nombre completo" required>
-          </div>  
-          <div class="--form-group">
-            <label for="">Correo:</label>
+          </div>
+          <div class="input-container">
+            <label for="email">Correo:</label>
             <input id="--email" type="email" name="email" placeholder=" Introduce tú correo electrónico" required>
-          </div> 
-          <div class="form-group">
-            <label for="">Telefono:</label>
+          </div>
+          <div class="input-container">
+            <label for="telephone">Telefono:</label>
             <input id="--telephone" type="tel" name="telephone" placeholder=" Introduce tú número de telefono" id="telephone" required>
           </div>
-            <div class="form-group"> 
-            <label for="">Mensaje:</label>
+          <div class="input-container">  
+            <label for="mensaje">Mensaje:</label>
             <input id="mensaje" type="text" name="mensaje" placeholder="Mensaje" required>
           </div>
-            <div class="--form-group">  
-            <input id="botonFormulario" onclick="" value="Enviar">
+            
+            <input class="--form-button" type="submit" value="Enviar">
         
-          </div> 
-            <p class="--logo-Form"> <img src="/public/image/Logo negro .svg" alt="logo"></p>
-        </form>
+          
+            <p class="--logo-form"> <img src="/public/image/Logo negro .svg" alt="logo"></p>
+        
+            <p id="--ok-mesaje">Nos pondremos en contacto contigo a la mayor brevedad</p>
+
+          </form>
     </div>
     </section>
     </main>
@@ -71,9 +75,10 @@
       </ul>
     </div>
     <div class="--rrss-footer">
-      <i class="fa-brands fa-facebook"></i>
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-twitter"></i>
+      <a href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="http://www.instagram.com" target="_blank">  <i class="fa-brands fa-instagram"></i></a>
+      <a href="http://www.x.com" target="_blank" ><i class="fa-brands fa-twitter"></i></a>
+      
     </div>
       <section class="--footer-links">
           <ul>
@@ -84,6 +89,6 @@
       </section>
       <p>© Copyright 2025</p>
     </footer>
-        
+    <script src="/src/js/contacto.js"></script>    
 </body>
 </html>
