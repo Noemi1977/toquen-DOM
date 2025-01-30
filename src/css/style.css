@@ -54,7 +54,7 @@
 .welcome-page {
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 750px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -99,7 +99,7 @@
 /********ABOUT US*******/
 .about {
     text-align: center;
-    padding: 36px 20px;
+    padding: 80px 20px;
 }
 
 .about__title {
@@ -221,9 +221,9 @@
 
 
 .button__card {
-    background-color: var(--color-background-white);
+    background-color: var(--color-bottoms-light);
     color: black;
-    border: 2px solid var(--color-bottom-stroke);
+    border: 2px solid var(--color-bottoms);
     padding: 8px 16px;
     border-radius: 5px;
     max-width: 100px;
@@ -239,8 +239,7 @@
 }
 
 .button__card:hover {
-    background-color: var(--color-bottom-stroke);
-    color: var(--color-background-white);
+    background-color: var(--color-bottoms);
 }
 
 
