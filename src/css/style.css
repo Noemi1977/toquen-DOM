@@ -295,9 +295,9 @@ textarea {
 
 
 .botton__form {
-    background-color: var(--color-background-white);
+    background-color: var(--color-bottoms);
     color: var(--color-text-dark);
-    border: 2px solid var(--color-bottom-stroke);
+    border: 2px solid var(--color-bottoms);
     padding: 8px 16px;
     border-radius: 5px;
     max-width: 100px;
@@ -310,8 +310,7 @@ textarea {
 }
 
 .botton__form:hover {
-    background-color: var(--color-bottom-stroke);
-        color: var(--color-background-white);
+    background-color: var(--color-background-white);
 }
 
 @media (max-width: 768px) {
