@@ -362,8 +362,52 @@ textarea {
     background-color: var(--color-background-white);
 }
 
-@media (max-width: 768px) {
-    body {
-        font-size: 14px;
+@media (max-width: 767px) {
+
+.welcome-page__title {
+        width: 300px;
+        font-size: 24px;
+
     }
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.about__image {
+    width: 100%;
+    max-width: 250px;
+}
+
+.about__text {
+    text-align: left;
+    width: 90%;
+    margin-left: 0;
+    
+}
+
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+
+.welcome-page__title {
+        width: 400px;
+
+    }
+
+    .about__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about__image {
+        width: 100%;
+        max-width: 355px;
+    }
+
+    .about__text {
+        margin-left: 0;
+        max-width: 400px;
+    }
+   
 }
