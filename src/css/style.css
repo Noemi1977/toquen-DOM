@@ -101,7 +101,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 50px;
+    padding-left: 0px;
 }
 
 .welcome-page__background {
