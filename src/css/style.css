@@ -7,7 +7,7 @@
 --color-background-white: #ffffff;
 --color-text-light: #ffffff;
 --color-text-dark: #2B2B2B;
-/***************FONTS SIZES**************/
+/***************FONT SIZES**************/
 --font-size-h1: 36px;
 --font-size-h2: 28px;
 --font-size-h3: 24px;
@@ -59,7 +59,7 @@
     /* BURGER */
     .burger-menu {
             display: none;
-            font-size: 32px;
+            font-size: var(--font-size-h2);
             background: none;
             border: none;
             cursor: pointer;
@@ -134,7 +134,9 @@
     border-radius: 5px;
     cursor: pointer;
     border: solid var(--color-bottoms);
-    font-family: var(--font-primary)
+    font-family: var(--font-primary);
+    font-size: var(--font-size-p);
+
 }
 
 .welcome-page__button:hover {
@@ -262,7 +264,7 @@
 
 
 .card__title {
-    font-size: 24px;
+    font-size: var(--font-size-h3);
     text-align: left;
     grid-column: 2;
     grid-row: 1;
@@ -281,7 +283,7 @@
     border-radius: 5px;
     max-width: 100px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: var(--font-size-p);
     transition: 0.3s;
     align-self: center;
     justify-self: start;
@@ -358,7 +360,7 @@ textarea {
     border-radius: 5px;
     max-width: 100px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: var(--font-size-p);
     transition: 0.3s;
     margin-top: 36px;
     font-family: var(--font-primary)
@@ -373,7 +375,7 @@ textarea {
 
 .welcome-page__title {
         width: 300px;
-        font-size: 24px;
+        font-size: var(--font-size-h3);
 
     }
 
