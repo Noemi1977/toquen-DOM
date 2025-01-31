@@ -7,7 +7,14 @@
 --color-background-white: #ffffff;
 --color-text-light: #ffffff;
 --color-text-dark: #2B2B2B;
+/***************FONTS SIZES**************/
 --font-size-h1: 36px;
+--font-size-h2: 28px;
+--font-size-h3: 24px;
+--font-size-h4: 20px;
+--font-size-h5: 18px;
+--font-size-p: 16px;
+/***************FONTS**************/
 --font-primary: 'Montserrat', sans-serif;
 --font-secondary: 'Libre Baskerville', serif;
 
@@ -202,14 +209,14 @@
 }
 
 .instruments__title {
-    font-size: 32px;
+    font-size: var(--font-size-h1);
     margin-bottom: 54px;
     text-align: center;
     font-family: var(--font-secondary)
 }
 
 .instruments__description {
-    font-size: 16px;
+    font-size: var(--font-size-p);
     max-width: 800px;
     margin: 0 auto 54px;
     font-family: var(--font-primary)
@@ -308,7 +315,7 @@ form {
 }
 
 label {
-    font-size: 16px;
+    font-size: var(--font-size-p);
     text-align: left;
     width: 400px;
     margin-top: 20px;
@@ -322,7 +329,7 @@ textarea {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    font-size: 16px;
+    font-size: var(--font-size-p);
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 400px;
