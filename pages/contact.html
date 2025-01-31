@@ -3,9 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Link a CSS -->
+    <link rel="stylesheet" href="/src/css/styleForm.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/public/image/Logo negro .svg" type="image/x-icon">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- icons fontawesome-->
+    <script src="https://kit.fontawesome.com/b5d82c6ee1.js" crossorigin="anonymous"></script><title>Contacto</title>
 </head>
 <body>
-    
+  <header class="--main-header">
+    <figure class="--logo-nav">
+      <img id="--logo" src="/public/image/Logo negro .svg" alt="logo">
+    </figure>
+    <nav>
+        <ul class="--nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+            <li><a href="#instrumentos">Instrumentos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+       
+    <section id="--contacto">
+      
+        <div class="--text-container">
+          <h2>¿Quieres preguntarnos algo?</h2>
+        </div>      
+        <div class="--form-container" >
+          <form action="" >
+          <!-- ponemos placeholder para que el usuario sepa lo que tiene que escribir en cada input -->
+          <div class="input-container">
+            <label for="nombre">Nombre:</label>
+            <input id="--name"  type="text" name="name" placeholder=" Introduce tú nombre completo" required>
+          </div>
+          <div class="input-container">
+            <label for="email">Correo:</label>
+            <input id="--email" type="email" name="email" placeholder=" Introduce tú correo electrónico" required>
+          </div>
+          <div class="input-container">
+            <label for="telephone">Telefono:</label>
+            <input id="--telephone" type="tel" name="telephone" placeholder=" Introduce tú número de telefono" id="telephone" required>
+          </div>
+          <div class="input-container">  
+            <label for="mensaje">Mensaje:</label>
+            <input id="mensaje" type="text" name="mensaje" placeholder="Mensaje" required>
+          </div>
+            
+            <input class="--form-button" type="submit" value="Enviar">
+        
+          
+            <p class="--logo-form"> <img src="/public/image/Logo negro .svg" alt="logo"></p>
+        
+            <p id="--ok-mesaje">Nos pondremos en contacto contigo a la mayor brevedad</p>
+
+          </form>
+    </div>
+    </section>
+    </main>
+    <footer class="--main-footer">
+      <div class="--logo-footer">
+        <img id="--logo" src="/public/image/Logo blanco.svg" alt="logo">
+      <ul class="--address">
+          <li>Location: Asturias</li>
+          <li>Teléfono: +34 000 000 00</li>
+      </ul>
+    </div>
+    <div class="--rrss-footer">
+      <a href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="http://www.instagram.com" target="_blank">  <i class="fa-brands fa-instagram"></i></a>
+      <a href="http://www.x.com" target="_blank" ><i class="fa-brands fa-twitter"></i></a>
+      
+    </div>
+      <section class="--footer-links">
+          <ul>
+              <li><a href="#aviso-legal">Aviso legal</a></li>
+              <li><a href="#politica-privacidad">Política de privacidad</a></li>
+              <li><a href="#politica-cookies">Política de cookies</a></li>
+          </ul>
+      </section>
+      <p>© Copyright 2025</p>
+    </footer>
+    <script src="/src/js/contacto.js"></script>    
 </body>
 </html>
