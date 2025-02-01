@@ -21,7 +21,7 @@
     /* HEADER - NAV */
 
 
-    .main-header {
+.main-header {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -150,7 +150,7 @@
     padding: 80px 20px;
 }
 
-.about__title {
+.about__title .instrument__title {
     font-size: var(--font-size-h1);
     margin-bottom: 54px;
     font-family: var(--font-secondary)
