@@ -4,13 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piano</title>
-    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="../src/css/instrument.css"> <!--ARCHIVO CSS STYLE-->
+    <script src="../src/js/instrument.js"></script> <!--ARCHIVO JAVASCRIPT-->
+    
+    <!--Baskerville Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    
+    <!--Montserrat Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <header class="main-header">
+        <figure class="logo-nav">
+            <img id="logo-nav" src="../public/image/Logo negro .svg" alt="logo-nav">
+        </figure>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#instrumentos">Instrumentos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <button class="burger-menu" id="burger-menu">
+            ☰
+        </button>
+        <script src="/src/js/instrument.js"></script>
+    </header>
 </head>
+
 <body>
-    <div>
-    <h1 class="instrument__title"> Bienvenidos en la pagina de Piano </h1>
-    <h2 class="action__title">Tocalo!</h2>
-    <p>Aquí puedes elegir la canción</p>
+    <div class="welcome__section">
+        <h1 class="h1__title"> Bienvenidos en la pagina de Piano </h1>
+        <h2 class="action__title">Tocalo!</h2>
+        <p class="instruction__title">Aquí puedes elegir la canción</p>
+        <h2 class="action__title">Some videos for inspiration</h2>
     </div>
+
+<div class="video__section">
+
+    <iframe class="video-frame" width="560" height="315" src="https://www.youtube.com/embed/cqAF1EHFCoY" 
+        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+    <h2 class="video__title">Bonnie Tyler - Total Eclipse of the Heart (Piano Cover)</h2>
+    <p class="about-video__title">♫ Social media:
+    Instagram - / gamazda
+    Facebook - / gamazdamusic
+    VK - https://vk.com/gamazda
+    TikTok - / gamazdarock
+    Patreon - / gamazda</p>
+    
+    <iframe class="video-frame" width="560" height="315" src="https://www.youtube.com/embed/Pmemxn_X5UI" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h2 class="video__title">Queen - We Are The Champions (Piano Cover)</h2>
+    <p class="about-video__title">♫ Social media:
+        Instagram - / gamazda
+        Facebook - / gamazdamusic
+        VK - https://vk.com/gamazda
+        TikTok - / gamazdarock
+        Patreon - / gamazda</p>
+    </div>
+    <button class="welcome-page__button">Conócenos</button>
 </body>
 </html>
