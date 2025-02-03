@@ -3,13 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Clave de sol</title>
-    <link src="stylesheet" href="../toquen-DOM/src/css/style.css">
+    <!--Baskerville Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    
+    <!--Montserrat Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="src/css/style.css">
+<header class="main-header">
+    <figure class="logo-nav">
+        <img id="logo-nav" src="public/image/Logo negro .svg" alt="logo-nav">
+    </figure>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+            <li><a href="#instrumentos">Instrumentos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <button class="burger-menu" id="burger-menu">
+        ☰
+    </button>
+    <script src="/src/js/instrument.js"></script>
+</header>
+
 </head>
 <body>
-        <div>
-            <h1 class="instrument__title">"Bienvenidos en la pagina de Piano"</h1>
-            <h1 class="instrument__title">"Bienvenidos en la pagina de Piano"</h1>
+<div class="welcome-page">
+    <img src="public/image/imageHome.svg" alt="Imagen de fondo" class="welcome-page__background">
+    <div class="welcome-page__content">
+        <h1 class="welcome-page__title">"Descubre tu pasión por la música con nosotros"</h1>
+        <button class="welcome-page__button">Conócenos</button>
+    </div>
+</div>
+
+<section class="about">
+    <h1 class="about__title">Sobre nosotros</h1>
+    <div class="about__content">
+        <img src="public/image/escuelaHistoria.svg" alt="Escuela de música" class="about__image">
+        <div class="about__text">
+            <p>Desde 2020, Clave de Sol ha sido un refugio para los amantes de la música, un espacio donde los sonidos y las emociones
+            se entrelazan para crear algo extraordinario. Fundada con la visión de hacer de la música un lenguaje universal, nuestra
+            escuela crece gracias a una comunidad apasionada y un compromiso con la excelencia.</p>
+            <p>Te queremos presentar a nuestras profesoras increíbles. Para leer más, pulsa el botón.</p>
+            <button class="about__button">Leer más</button>
         </div>
+    </div>
+</section>
+
+<section class="instruments">
+    <div class="instruments__container">
+        <h2 class="instruments__title">Los instrumentos</h2>
+        <p class="instruments__description">
+            ¡Explora nuestros instrumentos interactivos! Cada uno te lleva a un instrumento donde podrás practicar desde
+            la comodidad de tu hogar.
+            Ya sea el piano, el acordeón o la batería, hemos preparado herramientas para que aprendas mientras te
+            diviertes.
+            Haz clic en tu instrumento favorito y comienza a tocar.
+        </p>
+
+        <div class="instruments__grid">
+            <div class="card">
+                <img src="public/image/Piano-icono.png" alt="Piano" class="icon__card">
+                <h3 class="card__title">Piano</h3>
+                <button class="button__card">Probarlo</button>
+            </div>
+
+            <div class="card">
+                <img src="public/image/Tambor-icono.png" alt="Batería" class="icon icon__card">
+                    <h3 class="card__title">Bateria</h3>
+                    <button class="button__card">Probarlo</button>
+            </div>
+
+            <div class="card">
+                <img src="public/image/GUITARRA-icono.png" alt="Guitarra" class="icon icon__card">
+                    <h3 class="card__title">Guitarra</h3>
+                    <button class="button__card">Probarlo</button>
+            </div>
+
+            <div class="card">
+                <img src="public/image/Acordeon-icono.png" alt="Acordeón" class="icon icon__card">
+                    <h3 class="card__title">Acordeón</h3>
+                    <button class="button__card">Probarlo</button>
+            </div>
+        </div>
+    </div>
+</section>
 </body>
 </html>
