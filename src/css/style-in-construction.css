@@ -20,7 +20,7 @@
 body{
     background-color: var(--color-background-white); 
     color: var(--color-background-black);
-    font-size: 24px;
+    font-size: 16px;
     line-height: 1.5;
 }
 
@@ -73,7 +73,7 @@ body{
 }
 
 .contenido p{
-    font-size: 30px;
+    font-size: 32px;
 }
 
 /*ILUSTRACIÓN*/
@@ -85,7 +85,7 @@ body{
 
 .ilustracion img{
     width: 100%;
-    max-width: 400px;
+    max-width: 1000px;
 }
 
 /*SUPER FOOTER TROOPER*/
