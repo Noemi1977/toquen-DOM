@@ -1,15 +1,5 @@
 //validaciones de formulario
-// NOMBRE
-const name= document.getElementById("name")
 
-name.addEventListener("input", function() {
-  const basicEstructure = /[^a-zA-Z]/
-  if (basicEstructure.test(this.value)){
-    this.setCustomValidity("Solo se permiten letras");
-  }else{
-    this.setCustomValidity("")
-  }
-})
 
 // EMAIL
 const email=document.getElementById("email")
@@ -34,25 +24,23 @@ telephone.addEventListener("input", function(){
   }else{
     this.setCustomValidity("")
   }
-}
-
+})
 
 
 // BOTON ENVIAR
 
-const form= document.querySelector(form)
-console.log(form)
-const okMens= document.getElementById('ok-mesaje')
+const form = document.getElementById("form"); 
+const okMens = document.getElementById("ok-mesaje");
 
-form.addEventListener('submit', function(event) {
-    event.preventDefault(); 
+form.addEventListener("submit", function (event) {
+    event.preventDefault();
 
-    //El mensaje esta oculto esto lo muestra 
-    okMens.style.display = 'block';
+    // El mensaje está oculto, esto lo muestra 
+    okMens.style.display = "block";
 
-   //El mensaje desaparece después de 30 segundos
-    setTimeout(function() {
-        okMens.style.display = 'none';
-    }, 30000); 
-});
-
+    // El mensaje y los datos desaparecen después de 20 segundos
+    setTimeout(function () {
+      okMens.style.display = "none";
+      form.reset();
+    }, 20000);
+  });

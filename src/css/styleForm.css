@@ -83,13 +83,13 @@ h2{
    text-align: center;
 }
 
-.form-container {
-   position: relative; /* Esto permite que el logo se posicione dentro de este contenedor */
+/* .form-container {
+   position: relative;  Esto permite que el logo se posicione dentro de este contenedor 
    width: 90%;
    max-width: 700px;
-   margin: 0 auto; /* Centra el formulario */
+   margin: 0 auto;  Centra el formulario 
    overflow-x: hidden; 
-}
+} */
 
 form {
    display: flex;
@@ -165,7 +165,7 @@ input::placeholder {
    width: 120px;
    padding-right:500px;  
 }
-#--ok-mesaje{
+#ok-mesaje{
    display: none;
    font-size: 36px; 
    color:var(--color-bottom-stroke); 
