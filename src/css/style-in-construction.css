@@ -36,26 +36,26 @@ body{
 }
 
 /*LOGO BLACK NAV*/
-.logo-nav svg {
+.logo-nav svg{
     width: 120px;
     height: 110px;
 }
 
 /*LINKS BARRA DE NAVEGACION*/
-.nav-links {
+.nav-links{
     list-style: none;
     display: flex;
     gap: 60px;
 }
 
-.nav-links li a {
+.nav-links li a{
     text-decoration: none;
     color: var(--color-background-black);
     font-weight:normal;
     transition: color 0.3s;
 }
 
-.nav-links li a:hover {
+.nav-links li a:hover{
     color: var(--color-bottom-stroke);
 }
 
@@ -83,7 +83,7 @@ body{
     text-align: center;
 }
 
-.illustracion img {
+.ilustracion img{
     width: 100%;
     max-width: 400px;
 }
