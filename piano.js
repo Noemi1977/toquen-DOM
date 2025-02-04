@@ -1,6 +1,6 @@
 const pianoKeys = document.querySelectorAll(".piano-keys .key")
 let allKeys = [],
-audio = new Audio(`tunes/a.wav`); 
+audio = new Audio(`tunes/q.wav`); 
 const playTune = (key) => {
     audio.src = `tunes/${key}.wav`; 
     audio.play(); 
