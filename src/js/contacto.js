@@ -1,4 +1,15 @@
 //validaciones de formulario
+// NOMBRE
+const name= document.getElementById("name")
+
+name.addEventListener("input", function() {
+  const basicEstructure = /[^a-zA-Z]/
+  if (basicEstructure.test(this.value)){
+    this.setCustomValidity("Solo se permiten letras");
+  }else{
+    this.setCustomValidity("")
+  }
+})
 
 // EMAIL
 const email=document.getElementById("email")
@@ -12,11 +23,25 @@ email.addEventListener("input", function () {
   }
 });
 
+// TELEFONO
+
+const telephone= document.getElementById("telephone")
+
+telephone.addEventListener("input", function(){
+  const numberEstructure= /^[0-9]*$/
+  if(!numberEstructuremberEstructure.test(this.value)){
+    this.setCustomValidity("Solo se permiten numeros del 0 al 9")
+  }else{
+    this.setCustomValidity("")
+  }
+}
+
 
 
 // BOTON ENVIAR
 
-const form=document.querySelector('form')
+const form= document.querySelector(form)
+console.log(form)
 const okMens= document.getElementById('ok-mesaje')
 
 form.addEventListener('submit', function(event) {
