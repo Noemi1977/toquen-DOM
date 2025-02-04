@@ -85,38 +85,6 @@ body {
     font-size: 1.5em;                /* Размер шрифта заголовка */
 }
 
-/* === ПОДВАЛ === */
-.footer {
-    background: #000;                /* Черный фон */
-    color: white;                    /* Белый текст */
-    padding: 20px 0;                 /* Отступы сверху и снизу */
-    text-align: center;              /* Выравнивание текста по центру */
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-around;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.footer-logo img {
-    width: 50px;
-}
-
-.footer-info,
-.footer-links {
-    font-size: 0.9em;
-}
-
-.footer-links a {
-    color: white;
-    text-decoration: none;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
-}
 
 /* === АДАПТИВНОСТЬ === */
 @media (max-width: 768px) {
