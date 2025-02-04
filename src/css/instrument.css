@@ -102,6 +102,14 @@
     text-align: center;
 }
 
+.second-part-title{
+width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .h1__title {
     font-size: var(--font-size-h1);
     margin-bottom: 54px;
