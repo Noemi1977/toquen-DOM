@@ -141,7 +141,7 @@ body {
 .wrapper {
     padding: 35px;
     border-radius: 20px;
-    background: var(--color-background-white);
+    background: var(--color-text-dark);
     display: flex;
     justify-content: center;
     align-self: center;
@@ -210,7 +210,7 @@ body {
     color: var(--color-background-white);
 }
 
-@media screen and (max-width: 815px) {
+@media (min-width: 768px) and (max-width: 1000px) {
     .wrapper {
         padding: 25px;
     }
@@ -255,6 +255,7 @@ body {
         align-items: center;
         margin-top: 150px;
         margin-bottom: 250px;
+        background-color: var(--color-background-white);
     }
     .piano-keys .white {
         width: 40px;
