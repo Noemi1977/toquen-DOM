@@ -142,9 +142,12 @@ body{
   }
 
   .--rrss-footer i {
-  line-height: 100px;
-  color:var(--color-background-white);
-  font-size: 32px;
-  padding: 50px 50px;
- }
+    line-height: 100px;
+    color:var(--color-background-white);
+    font-size: 2rem;
+    padding: 50px 50px;
+   }
+   .--rrss-footer i:hover{
+      color:var(--color-bottom-stroke)
+   }
   
