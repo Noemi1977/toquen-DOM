@@ -21,16 +21,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/public/image/Logo negro .svg" type="image/x-icon">
+    <!-- icons fontawesome-->
+    <script src="https://kit.fontawesome.com/b5d82c6ee1.js" crossorigin="anonymous"></script>
+
     <header class="main-header">
         <figure class="logo-nav">
             <img id="logo-nav" src="public/image/Logo negro .svg" alt="logo-nav">
         </figure>
         <nav>
             <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
-                <li><a href="#instrumentos">Instrumentos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/pages/about-us.html">Sobre Nosotros</a></li>
+                <li><a href="#instruments">Instrumentos</a></li>
+                <li><a href="/pages/contact.html">Contacto</a></li>
             </ul>
         </nav>
         <button class="burger-menu" id="burger-menu">
@@ -46,7 +51,9 @@
         <img src="public/image/imageHome.svg" alt="Imagen de fondo" class="welcome-page__background">
         <div class="welcome-page__content">
             <h1 class="welcome-page__title">"Descubre tu pasión por la música con nosotros"</h1>
-            <button class="welcome-page__button">Conócenos</button>
+            <a href="/pages/contact.html">
+                <button class="welcome-page__button">Conócenos</button>
+            </a>
         </div>
     </div>
 
@@ -61,14 +68,16 @@
                     lenguaje universal, nuestra
                     escuela crece gracias a una comunidad apasionada y un compromiso con la excelencia.</p>
                 <p>Te queremos presentar a nuestras profesoras increíbles. Para leer más, pulsa el botón.</p>
-                <button class="about__button">Leer más</button>
+                <a href="/pages/about-us.html">
+                    <button class="about__button">Leer más</button>
+                 </a>
             </div>
         </div>
     </section>
 
     <section class="instruments">
         <div class="instruments__container">
-            <h2 class="instruments__title">Los instrumentos</h2>
+            <h2 class="instruments__title" id="instruments">Los instrumentos</h2>
             <p class="instruments__description">
                 ¡Explora nuestros instrumentos interactivos! Cada uno te lleva a un instrumento donde podrás practicar
                 desde
@@ -82,25 +91,33 @@
                 <div class="card">
                     <img src="public/image/Piano-icono.png" alt="Piano" class="icon__card">
                     <h3 class="card__title">Piano</h3>
-                    <button class="button__card">Probarlo</button>
+                    <a href="/pages/instruments.html">
+                        <button class="button__card">Probarlo</button>
+                    </a>
                 </div>
 
                 <div class="card">
                     <img src="public/image/Tambor-icono.png" alt="Batería" class="icon icon__card">
                     <h3 class="card__title">Bateria</h3>
-                    <button class="button__card">Probarlo</button>
+                    <a href="../pages/in-construction.html?instrumento=Guitarra">
+                         <button class="button__card">Probarlo</button>
+                    </a>
                 </div>
 
                 <div class="card">
                     <img src="public/image/GUITARRA-icono.png" alt="Guitarra" class="icon icon__card">
                     <h3 class="card__title">Guitarra</h3>
-                    <button class="button__card">Probarlo</button>
+                    <a href="../pages/in-construction.html?instrumento=Guitarra">
+                        <button class="button__card">Probarlo</button>
+                    </a>
                 </div>
 
                 <div class="card">
                     <img src="public/image/Acordeon-icono.png" alt="Acordeón" class="icon icon__card">
                     <h3 class="card__title">Acordeón</h3>
-                    <button class="button__card">Probarlo</button>
+                    <a href="../pages/in-construction.html?instrumento=Guitarra">
+                         <button class="button__card">Probarlo</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -119,6 +136,7 @@
             <a href="http://www.x.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
     
         </div>
+        
         <section class="--footer-links">
             <ul>
                 <li><a href="#aviso-legal">Aviso legal</a></li>
