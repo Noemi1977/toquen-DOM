@@ -19,6 +19,16 @@
     --font-secondary: 'Libre Baskerville', serif;
 }
 
+body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            
+    }
+
 /* HEADER - NAV */
 
 
@@ -132,13 +142,21 @@
     padding: 35px 40px;
     border-radius: 20px;
     background: var(--color-background-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: fit-content;    
 }
 
 .piano-keys {
     display: flex;
     list-style: none;
     margin-top: 40px;
-}
+    flex-wrap: nowrap;
+    justify-content: center;
+        }
+
 
 .piano-keys .key {
     cursor: pointer;
@@ -213,9 +231,7 @@
         margin-top: 20px;
     }
 
-    .piano-keys .key:where(:nth-child(9), :nth-child(10)) {
-        display: none;
-    }
+    
 
     .piano-keys .black {
         height: 100px;
@@ -225,22 +241,20 @@
 
     .piano-keys .white {
         height: 180px;
-        width: 60px;
+        width: 45px;
     }
 }
 
 @media screen and (max-width: 615px) {
-
-    .piano-keys .key:nth-child(13),
-    .piano-keys .key:nth-child(14),
-    .piano-keys .key:nth-child(15),
-    .piano-keys .key:nth-child(16),
-    .piano-keys .key :nth-child(17) {
-        display: none;
+    .wrapper{
+        transform: rotate(90deg);
+        margin-top: 200px;
+        margin-bottom: 250px;
+        display: flex;
+        align-items: center;
     }
-
     .piano-keys .white {
-        width: 50px;
+        width: 40px;
     }
 }
 
