@@ -260,7 +260,11 @@ body {
     .piano-keys .white {
         width: 40px;
     }
-    
+    .piano-keys .black {
+        height: 100px;
+        width: 40px;
+        margin: 0 -20px 0 -20px;
+    }
     
 }
 
