@@ -1,11 +1,112 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8"> <!-- Устанавливаем кодировку UTF-8 для поддержки всех символов -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Адаптивность -->
+  <link rel="stylesheet" href="/src/css/style-about-us.css"> <!-- Подключаем внешний CSS-файл -->
+  <title>About us</title> <!-- Название страницы -->
 </head>
 <body>
-    
+
+  <!-- Раздел "О нас" (без изменений) -->
+  <section class="about">
+      <h1 class="section-title">Sobre Nosotras</h1> <!-- Заголовок раздела -->
+      <div class="about-content">
+          <div class="about-column">
+              <p>Desde 2020, Clave de Sol ha sido un refugio para los amantes de la música, 
+                  un espacio donde los sonidos y las emociones se entrelazan para crear algo extraordinario.
+                  <br /><br />
+                  Fundada con la visión de hacer de la música un lenguaje universal, nuestra escuela crece gracias
+                  a una comunidad apasionada y un compromiso con la excelencia.
+                  <br /><br />
+                  Nuestros maestros, músicos excepcionales y mentores dedicados, inspiran a los estudiantes a descubrir 
+                  su propia voz musical.
+                  <br /><br />
+                  Cada lección fomenta una conexión personal con el instrumento, ya sea piano, violín o guitarra, 
+                  promoviendo una interpretación con el corazón.
+              </p>
+          </div>
+          <div class="about-column">
+              <p>Las aulas de Clave de Sol están llenas de historias: del niño que descubrió su amor por 
+                  la composición o del adulto que retomó la música después de años...
+                  <br />
+                  Estos logros son testimonio del poder transformador de la música.
+                  <br /><br />
+                  En nuestra escuela encontraréis en un ambiente
+                  que os ayudará a descubrir vuestro potencial 
+                  creativo, encontraréis amigos y personas afines.
+                  <br />
+                  Con espacios elegantes y una atmósfera serena, 
+                  Clave de Sol es más que una escuela: es un hogar para quienes sueñan y crean música.
+                  <br /><br />
+                  ¡Te invitamos a unirte a esta sinfonía! 
+                  <br />
+                  ¡Bienvenido al mundo de la música!
+              </p> 
+          </div>
+      </div>
+  </section>
+
+  <!-- Раздел "Наши преподаватели" -->
+  <section class="teachers">
+      <h2 class="section-title">Nuestras Profesoras</h2> <!-- Заголовок раздела -->
+
+      <!-- Учитель 1: фото слева, текст справа -->
+      <div class="teacher-container">
+          <div class="teacher-photo">
+              <img src="/public/image/CORAL - Profesora de Batería.png" alt="CORAL - Profesora de Batería">
+          </div>
+          <div class="teacher-info">
+              <h3>CORAL - Profesora de Batería</h3>
+              <p>Soy una música dinámica y apasionada con más de 18 años de experiencia enseñando batería. 
+                 La percusión ha sido siempre mi mayor inspiración y compartir este arte me ha llevado a especializarme 
+                 en desarrollar el ritmo, ayudando a descubrir su potencial de una manera divertida y enriquecedora.</p>
+          </div>
+      </div>
+
+      <!-- Учитель 2: нужно, чтобы текст и фото поменялись местами (текст слева, фото справа) -->
+      <!-- В HTML сохраняем порядок как у Учителя 1 (сначала teacher-photo, затем teacher-info) -->
+      <!-- Класс reverse в CSS изменит порядок элементов -->
+      <div class="teacher-container reverse">
+          <div class="teacher-photo">
+              <img src="/public/image/NOE - Profesora de Piano.png" alt="NOE - Profesora de Piano">
+          </div>
+          <div class="teacher-info">
+              <h3>NOE - Profesora de Piano</h3>
+              <p>Soy una mujer dinámica y creativa con más de 20 años de experiencia enseñando piano.
+                 Mi amor por la música y mi entusiasmo por compartir este arte me han llevado a especializarme en trabajar con niños, 
+                 ayudándolos a descubrir el maravilloso mundo del piano de una manera divertida y gratificante.</p>
+          </div>
+      </div>
+
+      <!-- Учитель 3: фото слева, текст справа -->
+      <div class="teacher-container">
+          <div class="teacher-photo">
+              <img src="/public/image/NATALIA - Profesora de Guitarra.png" alt="NATALIA - Profesora de Guitarra">
+          </div>
+          <div class="teacher-info">
+              <h3>NATALIA - Profesora de Guitarra</h3>
+              <p>Soy una guitarrista apasionada y versátil con más de 15 años de experiencia impartiendo clases de guitarra. 
+                 La creatividad ha sido siempre mi mayor motor, y transmitir este conocimiento me ha permitido especializarme 
+                 en acompañar a estudiantes, guiándolos en el desarrollo de su propio estilo.</p>
+          </div>
+      </div>
+
+      <!-- Учитель 4: также требуется, чтобы текст и фото поменялись местами (аналогично Учителю 2) -->
+      <div class="teacher-container reverse">
+          <div class="teacher-photo">
+              <img src="/public/image/JULIA - Profesora de Acordeón.png" alt="JULIA - Profesora de Acordeón">
+          </div>
+          <div class="teacher-info">
+              <h3>JULIA - Profesora de Acordeón</h3>
+              <p>Soy un acordeonista apasionado y dedicado con más de 10 años de experiencia enseñando acordeón.
+                 La música siempre ha sido mi mayor fuente de inspiración, y transmitir este conocimiento me ha permitido especializarme 
+                 en orientar a mis alumnos, ayudándolos a expresar sus emociones a través del instrumento.</p>
+          </div>
+      </div>
+  </section>
+
+ 
+
 </body>
 </html>
