@@ -9,6 +9,8 @@
     /*VARIABLES FONTS TIPOGRAFIAS*/
     --font-primary: 'Montserrat', sans-serif;
     --font-secondary: 'Libre Baskerville', serif;
+    /*FONT SIZE*/
+    --font-size-h2: 28px; /* for burguer menu*/
 }
 
 * {
@@ -24,16 +26,28 @@ body{
     line-height: 1.5;
 }
 
+/* BURGER */
+.burger-menu {
+    display: none;
+    font-size: var(--font-size-h2);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
 /* HEADER - NAV */
-.main-header{
+.main-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-family: var(--font-primary);
     padding: 16px 32px;
     background-color: var(--color-background-white);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombreado header-nav */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /*Sombreado nav*/
+    position: relative;  
 }
+
 
 /*LOGO BLACK NAV*/
 .logo-nav svg{
@@ -147,4 +161,52 @@ body{
   font-size: 32px;
   padding: 50px 50px;
  }
+  
+ .--rrss-footer i:hover {
+    color: var(--color-bottom-stroke)
+}
+
+/*MEDIA MOVIDAS*/
+@media (max-width: 768px) {
+    
+    .main-header {
+      position: relative;
+      padding: 10px 20px; 
+    }
+  
+    
+    .burger-menu {
+      display: block;
+      font-size: 28px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      z-index: 20;  
+    }
+  
+    
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px; 
+      left: 0;
+      width: 100%;
+      background: var(--color-background-white);
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 10;
+    }
+  
+    
+    .nav-links.active {
+      display: flex;
+    }
+  
+    
+    .burger-menu.active {
+      color: var(--color-bottom-stroke);
+    }
+  }
   

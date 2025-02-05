@@ -15,15 +15,28 @@ function getQueryParam(param) {
               case 'guitarra':
                   imagen.src = "../public/image/PH-GUITARRA.png";
                   break;
-              case 'acordeon':
+              case 'acordeón':
                   imagen.src = "../public/image/PH-ACORDEON.png";
                   break;
               case 'bateria':
                   imagen.src = "../public/image/PH-TAMBOR.png";
                   break;
               default:
-                  imagen.src = "../public/image/PLACEHOLDER-default.png";
+                  imagen.src = "../public/image/PLACEHOLDER-default.png"; //Por si hay error al cargar alguna de las ilustraciones
                   break;
           }
       }
   }
+
+  //BURGUER MENU
+  document.addEventListener("DOMContentLoaded", function() {
+    const burgerMenu = document.getElementById("burger-menu");
+    burgerMenu.addEventListener("click", function () {
+        const navLinks = document.querySelector(".nav-links");
+        navLinks.classList.toggle("active");
+        burgerMenu.classList.toggle("active");
+        
+    });
+  });
+  
+  
