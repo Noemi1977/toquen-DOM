@@ -40,6 +40,37 @@ body, html{
    width: 120px;
    height: 110px;
 }
+/* BURGER */
+.burger-menu {
+   display: none;
+   font-size: var(--font-size-h2);
+   background: none;
+   border: none;
+   cursor: pointer;
+}
+/* ADAPTATION */
+@media (max-width: 768px) {
+   .nav-links {
+       display: none;
+       flex-direction: column;
+       position: absolute;
+       top: 80px;
+       right: 0;
+       background: var(--color-background-white);
+       width: 100%;
+       padding: 20px 0;
+       text-align: center;
+       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   }
+
+   .nav-links.active {
+       display: flex;
+   }
+
+   .burger-menu {
+       display: block;
+   }
+}
 
 /*LINKS BARRA DE NAVEGACION*/
 .--nav-links {
@@ -58,6 +89,7 @@ body, html{
 .--nav-links li a:hover {
    color: var(--color-bottom-stroke);
 }
+
 
  #--contacto-contenedor {
    width: 80%; /* Para que se adapte mejor a distintos tamaños de pantalla */
@@ -83,13 +115,7 @@ h2{
    text-align: center;
 }
 
-.form-container {
-   position: relative; /* Esto permite que el logo se posicione dentro de este contenedor */
-   width: 90%;
-   max-width: 700px;
-   margin: 0 auto; /* Centra el formulario */
-   overflow-x: hidden; 
-}
+
 
 form {
    display: flex;
@@ -165,7 +191,7 @@ input::placeholder {
    width: 120px;
    padding-right:500px;  
 }
-#--ok-mesaje{
+#ok-mesaje{
    display: none;
    font-size: 36px; 
    color:var(--color-bottom-stroke); 
