@@ -320,8 +320,94 @@
     font-size: var(--font-size-p);
     width: 150px;
     margin-top: 54px;
+    margin-bottom: 20px;
 }
 
 .welcome-page__button:hover {
     background-color: var(--color-background-white);
+}
+
+/*FOOTER*/
+
+.--main-footer {
+    background-color: var(--color-background-black);
+    display: flex;
+    justify-content: space-between;
+    /* Distribuye los elementos horizontalmente */
+    align-items: center;
+    /* Alinea los elementos verticalmente */
+    flex-wrap: wrap;
+    /* Permite que los elementos se acomoden si no caben en una línea */
+    color: var(--color-background-white);
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.--logo-footer {
+    display: flex;
+    align-items: center;
+    /* Alinea logo y dirección en una línea */
+    gap: 60px;
+    /* Espacio entre el logo y el address */
+
+}
+
+.--logo-footer img {
+    max-width: 120px;
+    /* Ajusta el tamaño del logo */
+}
+
+.--address {
+    display: flex;
+    flex-direction: column;
+    /* Coloca los textos en columna */
+    font-style: normal;
+    gap: 5px;
+    /* Espaciado entre líneas de dirección */
+    list-style: none;
+}
+.--rrss-footer i {
+    line-height: 100px;
+    color:var(--color-background-white);
+    font-size: 2rem;
+    padding: 50px 50px;
+   }
+   .--rrss-footer i:hover{
+      color:var(--color-bottom-stroke)
+   }
+    
+.--footer-links ul {
+    list-style: none;
+    padding: 30px;
+    display: block;
+    gap: 30px;
+    /* Espaciado entre enlaces */
+}
+
+.--footer-links ul li a {
+    color: var(--color-background-white);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.--footer-links ul li a:hover {
+    color: var(--color-bottom-stroke);
+}
+
+.--main-footer p {
+    text-align: center;
+    width: 100%;
+    /* Asegura que el copyright ocupe toda la fila */
+    margin-top: 10px;
+}
+
+.--rrss-footer i {
+    line-height: 100px;
+    color: var(--color-background-white);
+    font-size: 2rem;
+    padding: 50px 50px;
+}
+
+.--rrss-footer i:hover {
+    color: var(--color-bottom-stroke)
 }
