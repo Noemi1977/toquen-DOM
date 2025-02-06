@@ -121,9 +121,24 @@ body {
     margin-top: 54px;
 }
 
-.instruction__howToPlay{
-    max-width: 900px;
+.instruction__howToPlay {
+    max-width: 600px;
     font-family: var(--font-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+.instruction__text {
+    text-align: left;
+}
+
+.instruction__h1 {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
 }
 
 .h1__title {
@@ -263,6 +278,7 @@ body {
         height: 180px;
         width: 45px;
     }
+    
 }
 
 @media screen and (max-width: 767px) {
@@ -285,6 +301,15 @@ body {
         width: 40px;
         margin: 0 -20px 0 -20px;
     }
+     .instruction__howToPlay {
+            max-width: 400px;
+            font-family: var(--font-primary);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
     
 }
 
@@ -319,7 +344,7 @@ body {
 
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .video__section {
         display: flex;
         flex-direction: column;
@@ -342,6 +367,7 @@ body {
         text-align: center;
         margin-top: 0;
     }
+    
 }
 
 
