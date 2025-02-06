@@ -23,6 +23,10 @@
       
         <title>Próximamente</title>
         <link rel="stylesheet" href="../src/css/style-in-construction.css"> 
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/public/image/Logo negro .svg" type="image/x-icon">
+        <!-- icons fontawesome-->
+    <script src="https://kit.fontawesome.com/b5d82c6ee1.js" crossorigin="anonymous"></script>
         <!-- Usar comando: ../  para navegar entre las carpetas del proyecto, localizar y seleccionar correctamente los archivos de forma manual. Solución a errores de enlace de estilos y pag
         por si los archivos no están en la misma carpeta -->
     </head>
@@ -35,10 +39,10 @@
     </figure>
     <nav>
         <ul class="nav-links">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../pages/about-us.html">Sobre Nosotros</a></li>
-            <li><a href="../pages/instruments.html">Instrumentos</a></li>
-            <li><a href="../pages/contact.html">Contacto</a></li>
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/pages/about-us.html">Sobre Nosotros</a></li>
+            <li><a href="/index.html#instruments">Instrumentos</a></li>
+            <li><a href="/pages/contact.html">Contacto</a></li>
         </ul>
     </nav>
    
@@ -54,21 +58,21 @@
         </figure>
     </section>
 </main>
-
 <footer class="--main-footer">
     <div class="--logo-footer">
-      <img id="--logo" src="../public/image/Logo blanco-svg.svg" alt="logo">
+        <img id="--logo" src="/public/image/Logo blanco.svg" alt="logo">
         <ul class="--address">
-        <li>Location: Asturias</li>
-        <li>Teléfono: +34 000 000 00</li>
+            <li>Location: Asturias</li>
+            <li>Teléfono: +34 000 000 00</li>
         </ul>
     </div>
+    <div class="--rrss-footer">
+        <a href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="http://www.instagram.com" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+        <a href="http://www.x.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
 
-  <div class="--rrss-footer">
-    <i class="fa-brands fa-facebook"></i> 
-    <i class="fa-brands fa-instagram"></i>
-    <i class="fa-brands fa-twitter"></i>
-  </div>
+    </div>
+    
     <section class="--footer-links">
         <ul>
             <li><a href="#aviso-legal">Aviso legal</a></li>
@@ -78,60 +82,5 @@
     </section>
     <p>© Copyright 2025</p>
 </footer>
-
-     <!--CAMBIOS DE PÁGINA CON JAVASCRIPT (añadir parámetro en button página de inicio)
-
-      EJEMPLO DE CÓDIGO PARA PONER EN EL HREF EN BOTTON:
-      
-        <a href="../pages/in-construction.html?instrumento=Guitarra">
-            <button>Guitarra</button>
-        </a>
-
-        <a href="../pages/in-construction.html?instrumento=Tambor">
-            <button>tambor</button>
-        </a>
-
-        <a href="../pages/in-construction.html?instrumento=Acordeon">
-            <button>acordeon</button>
-        </a>-->
-
-        <!--<script>
-            // Función parámetro instrumento - URL
-            function getQueryParam(param) {
-              const urlParams = new URLSearchParams(window.location.search);
-              return urlParams.get(param);
-            }
-          
-            // Obtener el parámetro 'instrumento'
-            const instrumentoParam = getQueryParam('instrumento');
-            if (instrumentoParam) {
-              // Cambios de título (h1) con el nombre del instrumento
-              const titulo = document.querySelector('.construccion h1');
-              titulo.textContent = decodeURIComponent(instrumentoParam);
-              
-              // Actualizar el atributo alt de la imagen
-              const imagen = document.querySelector('.ilustracion img');
-              imagen.alt = `${decodeURIComponent(instrumentoParam)} en construcción`;
-              
-              // SRC Cambio de ilustración según el instrumento
-              switch (instrumentoParam.toLowerCase()) {
-                case 'guitarra':
-                  imagen.src = "../public/image/PH-GUITARRA.png";
-                  break;
-                case 'acordeon':
-                  imagen.src = "../public/image/PH-ACORDEON.png";
-                  break;
-                case 'tambor':
-                  imagen.src = "../public/image/PH-TAMBOR.png";
-                  break;
-                default:
-                  // Asignar una imagen por defecto ¿?
-                  imagen.src = "../public/image/PLACEHOLDER-default.png";
-                  break;
-              }
-            }
-          </script>-->
-    
-      <script src="../src/js/instrument.js"></script>
 </body>
 </html>
