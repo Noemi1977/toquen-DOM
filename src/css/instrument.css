@@ -118,7 +118,12 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 54px;
+}
+
+.instruction__howToPlay{
+    max-width: 900px;
+    font-family: var(--font-primary);
 }
 
 .h1__title {
