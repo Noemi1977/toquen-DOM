@@ -113,7 +113,6 @@
     padding: 5px; /* Внутренний отступ */
     max-width: 700px; /* Максимальная ширина контейнера */
     margin: 0 auto; /* Центрирование контейнера */
-    background: white;
     font-family: var(--font-primary);
  }
  

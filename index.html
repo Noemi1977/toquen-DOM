@@ -28,7 +28,9 @@
 
     <header class="main-header">
         <figure class="logo-nav">
-            <img id="logo-nav" src="public/image/Logo negro .svg" alt="logo-nav">
+            <a href="../index.html">
+                <img id="--logo" src="/public/image/Logo negro .svg" alt="logo">
+              </a>
         </figure>
         <nav>
             <ul class="nav-links">
@@ -121,6 +123,39 @@
                 </div>
             </div>
         </div>
+    </section>
+    <section id="--contacto">
+      
+        <div class="--text-container">
+          <h2>¿Quieres preguntarnos algo?</h2>
+        </div>      
+        <div class="form-container">
+          <form action="" id="form" >
+          <!-- ponemos placeholder para que el usuario sepa lo que tiene que escribir en cada input -->
+          <div class="input-container">
+            <label for="nombre">Nombre:</label>
+            <input id="name" type="text" name="name" placeholder=" Introduce tú nombre completo" required minlength="3" maxlength="50">
+          </div>
+          <div class="input-container">
+            <label for="email">Correo:</label>
+            <input id="email" type="email" name="email" placeholder=" Introduce tú correo electrónico" required>
+          </div>
+          <div class="input-container">
+            <label for="telephone">Telefono:</label>
+            <input id="telephone" type="tel" name="telephone" placeholder=" Introduce tú número de telefono" required pattern="[0-9]{9}" title="Debe contener 9 números">
+          </div>
+          <div class="input-container">  
+            <label for="mensaje">Mensaje:</label>
+            <input id="mensaje" type="text" name="mensaje" placeholder="Mensaje" required>
+          </div>
+            
+            <input class="--form-button" id="button" type="submit" value="Enviar">
+        
+        
+            <p id="ok-mesaje">Nos pondremos en contacto contigo a la mayor brevedad</p>
+
+          </form>
+    </div>
     </section>
     <footer class="--main-footer">
         <div class="--logo-footer">

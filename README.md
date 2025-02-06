@@ -2,7 +2,7 @@
 
 Instrumento Musical Interactivo
 
-Este proyecto es una aplicación web interactiva, incluida en una escuela de música, que permite a los usuarios tocar un instrumento musical utilizando tanto el teclado como el ratón.
+Este proyecto es una aplicación web interactiva, incluida en una escuela de música, que permite a los usuarios tocar un instrumento musical utilizando tanto el teclado como el ratón. En este momento solo esta activo el instrumento Piano
 
 ## Características
 
@@ -20,18 +20,19 @@ Este proyecto es una aplicación web interactiva, incluida en una escuela de mú
 
 1. Clona este repositorio:
    bash
-   git clone <https://github.com/tu-usuario/nombre-del-repositorio.git>
+   git clone (<https://github.com/Noemi1977/toquen-DOM.git>)
 2. Abre el archivo `index.html` en un navegador web.
 
-3. Usa el teclado o haz clic en las teclas del instrumento para reproducir sonidos.
+3. Puedes usar el ratón para interactuar con la página los links cambian de color para mostrar su interacción y asi trasladarte a las diferentes secciones de la página.
 
-## Cómo Funciona
+4. Para recargar la página o volver a la landing page puedes pulsar el logo colocado en la parte superior izquierda o darle al navegador en inicio en cualquiera de las páginas.
+
+## Cómo tocar el instrumento activo (piano)
 
 - Cada tecla del instrumento está asignada a una tecla del teclado.
 - Al presionar una tecla o hacer clic, se reproduce un sonido predefinido.
-- Se usa la API `Audio` de JavaScript para la reproducción de sonidos.
 
-## Mejoras Futuras
+## Mejoras por incorporar
 
 - Agregar más instrumentos.
 - Implementar grabación y reproducción de secuencias.
@@ -46,5 +47,6 @@ Si deseas contribuir, siéntete libre de hacer un fork y enviar un pull request 
  Puedes utilizarlo y modificarlo libremente.
 
 ---
+Este proyecto está realizado por Noemi, Julia, Coral y Natalia
 
 Diviertete en nuestra escuela de música interactiva!!!
