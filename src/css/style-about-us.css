@@ -1,3 +1,24 @@
+:root {
+    --color-bottom-stroke: #D29E2E;
+    --color-bottoms: #ffcc66;
+    --color-bottoms-light: #FEF5E6;
+    --color-background-grey: #C4C4C4;
+    --color-background-black: #2B2B2B;
+    --color-background-white: #ffffff;
+    --color-text-light: #ffffff;
+    --color-text-dark: #2B2B2B;
+    /***************FONT SIZES**************/
+    --font-size-h1: 36px;
+    --font-size-h2: 28px;
+    --font-size-h3: 24px;
+    --font-size-h4: 20px;
+    --font-size-h5: 18px;
+    --font-size-p: 16px;
+    /***************FONTS**************/
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Libre Baskerville', serif;
+}
+
 /* === ОБЩИЕ СТИЛИ === */
 body {
     font-family: Arial, sans-serif; /* Устанавливаем основной шрифт */
@@ -11,6 +32,7 @@ body {
     text-align: center; /* Выравнивание заголовков по центру */
     font-size: 2em; /* Размер шрифта заголовка */
     margin: 40px 0; /* Отступ сверху и снизу */
+    font-family: var(--font-secondary);
 }
 
 /* === СЕКЦИЯ "О НАС" === */
@@ -19,6 +41,7 @@ body {
     max-width: 700px; /* Максимальная ширина контейнера */
     margin: 0 auto; /* Центрирование контейнера */
     background: white;
+    font-family: var(--font-primary);
 }
 
 .about-content {
@@ -78,11 +101,13 @@ body {
     flex: 1;                         /* Занимает равную часть */
     padding: 0 0px;                 /* Внутренний отступ слева и справа */
     text-align: left;
+    font-family: var(--font-primary);
 }
 
 .teacher-info h3 {
     margin: 0 0 10px;                /* Отступы у заголовка */
     font-size: 1.5em;                /* Размер шрифта заголовка */
+    font-family: var(--font-primary);
 }
 
 
