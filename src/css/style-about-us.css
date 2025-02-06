@@ -1,12 +1,12 @@
 :root {
-    --color-bottom-stroke: #D29E2E;
+    --color-bottom-stroke: #d29e2e;
     --color-bottoms: #ffcc66;
-    --color-bottoms-light: #FEF5E6;
-    --color-background-grey: #C4C4C4;
-    --color-background-black: #2B2B2B;
+    --color-bottoms-light: #fef5e6;
+    --color-background-grey: #c4c4c4;
+    --color-background-black: #2b2b2b;
     --color-background-white: #ffffff;
     --color-text-light: #ffffff;
-    --color-text-dark: #2B2B2B;
+    --color-text-dark: #2b2b2b;
     /***************FONT SIZES**************/
     --font-size-h1: 36px;
     --font-size-h2: 28px;
@@ -15,123 +15,139 @@
     --font-size-h5: 18px;
     --font-size-p: 16px;
     /***************FONTS**************/
-    --font-primary: 'Montserrat', sans-serif;
-    --font-secondary: 'Libre Baskerville', serif;
-}
-
-/* === ОБЩИЕ СТИЛИ === */
-body {
-     
+    --font-primary: "Montserrat", sans-serif;
+    --font-secondary: "Libre Baskerville", serif;
+ }
+ 
+ 
+ /* === ОБЩИЕ СТИЛИ === */
+ body {
+    font-family: Arial, sans-serif; /* Устанавливаем основной шрифт */
     margin: 0; /* Убираем внешние отступы */
     padding: 0; /* Убираем внутренние отступы */
     color: #000; /* Цвет текста - черный */
     background: white; /* Фон страницы */
-}
-
-.section-title {
+ }
+ 
+ 
+ .section-title {
     text-align: center; /* Выравнивание заголовков по центру */
     font-size: 2em; /* Размер шрифта заголовка */
     margin: 40px 0; /* Отступ сверху и снизу */
     font-family: var(--font-secondary);
-}
-
-/* === СЕКЦИЯ "О НАС" === */
-.about {
+ }
+ 
+ 
+ /* === СЕКЦИЯ "О НАС" === */
+ .about {
     padding: 5px; /* Внутренний отступ */
     max-width: 700px; /* Максимальная ширина контейнера */
     margin: 0 auto; /* Центрирование контейнера */
     background: white;
     font-family: var(--font-primary);
-}
-
-.about-content {
+ }
+ 
+ 
+ .about-content {
     display: flex; /* Размещаем колонки в ряд */
     gap: 95px; /* Расстояние между колонками */
-}
-
-.about-column {
+ }
+ 
+ 
+ .about-column {
     flex: 1; /* Колонки занимают равное пространство */
     text-align: justify; /* Выравнивание текста по ширине */
-}
-
-/* === СЕКЦИЯ "НАШИ ПРЕПОДАВАТЕЛИ" === */
-.teachers {
+ }
+ 
+ 
+ /* === СЕКЦИЯ "НАШИ ПРЕПОДАВАТЕЛИ" === */
+ .teachers {
     padding: 40px 0; /* Отступы сверху и снизу */
     background: white;
-}
-
-/* Контейнер для каждого учителя с использованием Flexbox */
-.teacher-container {
-    width: 700px;                    /* Фиксированная ширина контейнера */
-    display: flex;                   /* Используем Flexbox для двух колонок */
-    flex-direction: row;             /* Элементы располагаются в одну строку */
-    align-items: center;             /* Выравнивание по высоте */
-    margin: 20px auto;               /* Центрирование контейнера и отступы сверху/снизу */
-    padding: 20px;                   /* Внутренние отступы */
-    box-sizing: border-box;          /* Учет внутренних отступов в ширине */
+ }
+ 
+ 
+ /* Контейнер для каждого учителя с использованием Flexbox */
+ .teacher-container {
+    width: 700px; /* Фиксированная ширина контейнера */
+    display: flex; /* Используем Flexbox для двух колонок */
+    flex-direction: row; /* Элементы располагаются в одну строку */
+    align-items: center; /* Выравнивание по высоте */
+    margin: 20px auto; /* Центрирование контейнера и отступы сверху/снизу */
+    padding: 20px; /* Внутренние отступы */
+    box-sizing: border-box; /* Учет внутренних отступов в ширине */
     gap: 95px; /* Добавляет px пространства между элементами */
-}
-
-
-/* При наличии класса reverse меняем визуальный порядок элементов */
-.teacher-container.reverse {
+ }
+ 
+ 
+ /* При наличии класса reverse меняем визуальный порядок элементов */
+ .teacher-container.reverse {
     flex-direction: row-reverse;
-}
-
-/* Стили для области с фотографией */
-.teacher-photo {
-    flex: 1;                         /* Занимает равную часть */
+ }
+ 
+ 
+ /* Стили для области с фотографией */
+ .teacher-photo {
+    flex: 1; /* Занимает равную часть */
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.teacher-photo img {
-    width: 250px;                    /* Фиксированная ширина изображения */
-    height: 250px;                   /* Фиксированная высота изображения */
-    border-radius: 50%;              /* Круглое изображение */
-    object-fit: cover;               /* Изображение подгоняется по контейнеру с обрезкой лишнего */
+ }
+ 
+ 
+ .teacher-photo img {
+    width: 250px; /* Фиксированная ширина изображения */
+    height: 250px; /* Фиксированная высота изображения */
+    border-radius: 50%; /* Круглое изображение */
+    object-fit: cover; /* Изображение подгоняется по контейнеру с обрезкой лишнего */
     border: none;
     display: block;
-}
-
-/* Стили для текстовой информации */
-.teacher-info {
-    flex: 1;                         /* Занимает равную часть */
-    padding: 0 0px;                 /* Внутренний отступ слева и справа */
+ }
+ 
+ 
+ /* Стили для текстовой информации */
+ .teacher-info {
+    flex: 1; /* Занимает равную часть */
+    padding: 0 0px; /* Внутренний отступ слева и справа */
     text-align: left;
     font-family: var(--font-primary);
-}
-
-.teacher-info h3 {
-    margin: 0 0 10px;                /* Отступы у заголовка */
-    font-size: 1.5em;                /* Размер шрифта заголовка */
+ }
+ 
+ 
+ .teacher-info h3 {
+    margin: 0 0 10px; /* Отступы у заголовка */
+    font-size: 1.5em; /* Размер шрифта заголовка */
     font-family: var(--font-primary);
-}
-
-
-/* === АДАПТИВНОСТЬ === */
-@media (max-width: 768px) {
+ }
+ 
+ 
+ /* === АДАПТИВНОСТЬ === */
+ @media (max-width: 768px) {
     .about-content {
         flex-direction: column;
     }
-
+ 
+ 
     .teacher-container {
         width: 100%;
-        flex-direction: column;      /* При узком экране располагаем элементы вертикально */
+        flex-direction: column; /* При узком экране располагаем элементы вертикально */
         text-align: center;
     }
-
+ 
+ 
     .teacher-container.reverse {
         flex-direction: column;
     }
-
+ 
+ 
     .teacher-info {
         padding: 20px 0;
     }
-
+ 
+ 
     .footer-content {
         flex-direction: column;
         text-align: center;
     }
-}
+ }
+ 
