@@ -136,7 +136,22 @@ body {
     font-size: var(--font-size-p);
     font-family: var(--font-primary)
 }
+.notes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
 
+.notes img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+    
+}
 /*PIANO*/
 .wrapper {
     padding: 35px;
