@@ -19,6 +19,16 @@
     --font-secondary: 'Libre Baskerville', serif;
 }
 
+body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            
+    }
+
 /* HEADER - NAV */
 
 
@@ -129,16 +139,24 @@
 
 /*PIANO*/
 .wrapper {
-    padding: 35px 40px;
+    padding: 35px;
     border-radius: 20px;
-    background: var(--color-background-grey);
+    background: var(--color-text-dark);
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+
 }
 
 .piano-keys {
     display: flex;
     list-style: none;
-    margin-top: 40px;
+    margin-top: 30px;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
+
 
 .piano-keys .key {
     cursor: pointer;
@@ -192,7 +210,7 @@
     color: var(--color-background-white);
 }
 
-@media screen and (max-width: 815px) {
+@media (min-width: 768px) and (max-width: 1000px) {
     .wrapper {
         padding: 25px;
     }
@@ -213,9 +231,7 @@
         margin-top: 20px;
     }
 
-    .piano-keys .key:where(:nth-child(9), :nth-child(10)) {
-        display: none;
-    }
+    
 
     .piano-keys .black {
         height: 100px;
@@ -225,23 +241,31 @@
 
     .piano-keys .white {
         height: 180px;
-        width: 60px;
+        width: 45px;
     }
 }
 
-@media screen and (max-width: 615px) {
+@media screen and (max-width: 767px) {
 
-    .piano-keys .key:nth-child(13),
-    .piano-keys .key:nth-child(14),
-    .piano-keys .key:nth-child(15),
-    .piano-keys .key:nth-child(16),
-    .piano-keys .key :nth-child(17) {
-        display: none;
+    .wrapper{
+        transform: rotate(90deg);
+        transform-origin: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 150px;
+        margin-bottom: 250px;
+        background-color: var(--color-background-white);
     }
-
     .piano-keys .white {
-        width: 50px;
+        width: 40px;
     }
+    .piano-keys .black {
+        height: 100px;
+        width: 40px;
+        margin: 0 -20px 0 -20px;
+    }
+    
 }
 
 .video__section {

@@ -17,7 +17,7 @@
     /***************FONTS**************/
     --font-primary: 'Montserrat', sans-serif;
     --font-secondary: 'Libre Baskerville', serif;
-
+}
     /* HEADER - NAV */
 
 
@@ -89,7 +89,7 @@
         }
     }
 
-}
+
 
 .body {
     background-color: var(--color-background-white);
