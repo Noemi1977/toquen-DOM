@@ -193,7 +193,11 @@
  /* === АДАПТИВНОСТЬ === */
  @media (max-width: 768px) {
     .about-content {
-        flex-direction: column;
+      display: flex;  
+      flex-direction: column;
+      margin-left: 10%;
+      margin-right: 10%;
+      max-width: 80%;
     }
  
  
@@ -201,6 +205,9 @@
         width: 100%;
         flex-direction: column; /* При узком экране располагаем элементы вертикально */
         text-align: center;
+      margin-left: 10%;
+         margin-right: 10%;
+         max-width: 80%;
     }
  
  
