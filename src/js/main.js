@@ -1,11 +1,3 @@
-document.getElementById("burger-menu").addEventListener("click", function () {
-    let navLinks = document.querySelector(".nav-links");
-    navLinks.classList.toggle("active");
-
-
-    this.classList.toggle("active");
-});
-
 //validaciones de formulario
 
 
@@ -51,4 +43,15 @@ form.addEventListener("submit", function (event) {
       okMens.style.display = "none";
       form.reset();
     }, 20000);
+  });
+
+   //BURGUER MENU
+   document.addEventListener("DOMContentLoaded", function() {
+    const burgerMenu = document.getElementById("burger-menu");
+    burgerMenu.addEventListener("click", function () {
+        const navLinks = document.querySelector(".nav-links");
+        navLinks.classList.toggle("active");
+        burgerMenu.classList.toggle("active");
+        
+    });
   });
