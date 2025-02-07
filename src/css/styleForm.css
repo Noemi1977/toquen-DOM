@@ -292,7 +292,7 @@ input::placeholder {
 
    /* Ajustar márgenes y tamaños de los formularios */
    .input-container {
-       width: 100%; /* Los campos del formulario ocupan el 100% */
+       width: 90%; /* Los campos del formulario ocupan el 100% */
        margin-left: 0; /* Eliminar márgenes laterales */
    }
 
