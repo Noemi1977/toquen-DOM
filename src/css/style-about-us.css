@@ -45,6 +45,7 @@
    list-style: none;
    display: flex;
    gap: 60px;
+   z-index: 10;
 }
 
 .nav-links li a {
@@ -52,7 +53,7 @@
    color: var(--color-background-black);
    font-weight: normal;
    transition: color 0.3s;
-}
+   }
 
 .nav-links li a:hover {
    color: var(--color-bottom-stroke);
@@ -64,6 +65,7 @@
       background: none;
       border: none;
       cursor: pointer;
+      z-index: 20;
   }
 
   /* ADAPTATION */
