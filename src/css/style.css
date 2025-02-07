@@ -355,6 +355,7 @@
         align-items: center;
         justify-self: center;
     }
+
     
 }
 
@@ -448,6 +449,8 @@
     align-items: center; /* Centra los inputs */
     width: 100%;/*Ocupará el ancho del contenedor*/
     overflow-x: hidden; 
+    
+
  }
  .input-container{
     display: flex;
