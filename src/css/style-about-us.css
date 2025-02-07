@@ -30,6 +30,7 @@
    padding: 16px 32px;
    background-color: var(--color-background-white);
    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   overflow-x: hidden;
    /* Sombreado header-nav */
 }
 

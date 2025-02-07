@@ -97,6 +97,7 @@ body, html{
    color: var(--color-bottom-stroke);
 }
 
+/*MAIN PART*/
 
  #--contacto-contenedor {
    width: 80%; /* Para que se adapte mejor a distintos tamaños de pantalla */
