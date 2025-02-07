@@ -6,13 +6,35 @@
   <link rel="stylesheet" href="/src/css/style-about-us.css"> <!-- Подключаем внешний CSS-файл -->
    <!-- Favicon -->
    <link rel="shortcut icon" href="/public/image/Logo negro .svg" type="image/x-icon">
-<!-- Google fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <title>Sobre nosotros</title> <!-- Название страницы -->
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- icons fontawesome-->
+  <script src="https://kit.fontawesome.com/b5d82c6ee1.js" crossorigin="anonymous"></script>
+
+    <title>Sobre nosotros</title> <!-- Название страницы -->
 </head>
 <body>
+    <header class="main-header">
+        <figure class="logo-nav">
+            <a href="../index.html">
+                <img id="--logo" src="/public/image/Logo negro .svg" alt="logo">
+            </a>
+        </figure>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/pages/about-us.html">Sobre Nosotros</a></li>
+                <li><a href="/index.html#instruments">Instrumentos</a></li>
+                <li><a href="/pages/contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <button class="burger-menu" id="burger-menu">
+            ☰
+        </button>
+        <script src="/src/js/instrument.js"></script>
+    </header>
 
   <!-- Раздел "О нас" (без изменений) -->
   <section class="about">
@@ -112,7 +134,30 @@
       </div>
   </section>
 
- 
+  <footer class="--main-footer">
+    <div class="--logo-footer">
+        <img id="--logo" src="/public/image/Logo blanco.svg" alt="logo">
+        <ul class="--address">
+            <li>Location: Asturias</li>
+            <li>Teléfono: +34 000 000 00</li>
+        </ul>
+    </div>
+    <div class="--rrss-footer">
+        <a href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="http://www.instagram.com" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+        <a href="http://www.x.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+
+    </div>
+    
+    <section class="--footer-links">
+        <ul>
+            <li><a href="#aviso-legal">Aviso legal</a></li>
+            <li><a href="#politica-privacidad">Política de privacidad</a></li>
+            <li><a href="#politica-cookies">Política de cookies</a></li>
+        </ul>
+    </section>
+    <p>© Copyright 2025</p>
+</footer>
 
 </body>
 </html>

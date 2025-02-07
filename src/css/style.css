@@ -402,6 +402,108 @@
     }
 }
 
+#--contacto-contenedor {
+    width: 80%; /* Para que se adapte mejor a distintos tamaños de pantalla */
+    max-width: 800px; /* Limita el ancho máximo */
+    height: auto; /* Ajusta la altura según el contenido */
+    margin: 40px auto; /* Centra horizontalmente */
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    text-align: center;
+ } 
+ 
+ h2{
+    font-family: var(--font-secondary);
+    font-size: 36px;
+ }
+ 
+ 
+ .--text-container {
+    width: 50%;
+    margin: 50px auto;
+    text-align: center;
+ }
+ 
+ 
+ 
+ form {
+    display: flex;
+    flex-direction: column; /* Los elementos del formulario en columna */
+    align-items: center; /* Centra los inputs */
+    width: 100%;/*Ocupará el ancho del contenedor*/
+    overflow-x: hidden; 
+ }
+ .input-container{
+    display: flex;
+    flex-direction: column; /* Pone el label arriba del input */
+    align-items: flex-start; /* Alinea a la izquierda */
+    margin-left: 100px; /* Aplica margen a todo el bloque */
+    width: 90%; /* Ajusta el ancho del contenedor */
+    max-width: 700px; /* Limita el ancho máximo */
+ }
+ 
+ input {
+    width: 100%; /* Ajustable para pantallas más pequeñas */
+    max-width: 700px; /* No excede el ancho definido */
+    height: 86px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 24px;
+    border:1px solid #ccc;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    text-align: left;
+ }
+ 
+ label {
+    font-size: 24px;
+    margin-top: 10px;
+    font-family: var(--font-primary);
+ }
+ 
+ input::placeholder {
+    font-size: 24px; 
+    color:var(--color-background-grey) 
+ }
+ 
+ #mensaje {
+    width: 100%;
+    max-width: 700px;
+    height: 355px;
+    margin-bottom: 65px;
+ }
+ 
+ .--form-button {
+    font-family: var(--font-primary);
+    background-color:  var(--color-background-white);
+    color: black;
+    border: 2px solid var(--color-bottom-stroke);
+    border-radius: 10 px;
+    max-width: 100px;
+    font-size: 18px;
+    transition: 0.3s;
+    margin-top: 20px;
+    cursor:pointer;
+    text-align: center;
+    width: 138px;
+    height: 40px;
+ 
+ }
+ .--form-button:hover {
+    background-color: var(--color-bottom-stroke);
+        color: var(--color-background-white);
+ }
+ 
+ 
+ #ok-mesaje{
+    display: none;
+    font-size: 36px; 
+    color:var(--color-bottom-stroke); 
+    text-align: center;
+ }
+  
 /*FOOTER*/
 
 .--main-footer {
