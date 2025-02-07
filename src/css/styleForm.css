@@ -25,7 +25,7 @@
 body, html{
    background-color: var(--color-background-white); 
    color: var(--color-background-black);
-   font-size: 24px;
+   font-size: var(--font-size-h3);
    line-height: 1.5;
    height: 100%;
 }
@@ -113,7 +113,7 @@ body, html{
 
 h2{
    font-family: var(--font-secondary);
-   /* font-size: 36px; */
+   font-size: var(--font-size-h2);
 }
 
 
@@ -284,7 +284,12 @@ input::placeholder {
        flex-direction: column; /* Alineo los links en una columna */
        gap: 20px;
        text-align: center;
+       display: none;
    }
+      .nav-links.active {
+      display: block;
+
+      }
 
    /* Modificar tamaño de la fuente en los inputs */
    input {
@@ -335,7 +340,7 @@ input::placeholder {
 }
 
 /* Pantallas grandes (tabletas y PCs) */
-@media (min-width: 769px) {
+@media (min-width: 768px) and (max-width: 1200px) {
    /* Logo y enlaces del header */
    .--logo-nav {
        width: 150px;
@@ -345,7 +350,12 @@ input::placeholder {
    .nav-links {
        flex-direction: row;
        gap: 60px;
+      display: none;
    }
+      .nav-links.active {
+         display: block;
+   
+      }
 
    .input-container {
        width: 90%; /* Usar el 90% del ancho en pantallas más grandes */
