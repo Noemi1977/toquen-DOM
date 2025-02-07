@@ -173,23 +173,23 @@ input::placeholder {
 
 .--form-button {
    font-family: var(--font-primary);
-   background-color:  var(--color-background-white);
-   color: black;
-   border: 2px solid var(--color-bottom-stroke);
+   background-color:  var(--color-bottoms);
+   color: var(--color-background-black);
+   border: 2px solid var(--color-bottoms);
    border-radius: 10 px;
    max-width: 100px;
    font-size: 18px;
    transition: 0.3s;
    margin-top: 20px;
-   cursor:pointer;
+   cursor: pointer;
    text-align: center;
    width: 138px;
    height: 40px;
 
 }
 .--form-button:hover {
-   background-color: var(--color-bottom-stroke);
-       color: var(--color-background-white);
+   background-color: var(--color-background-white);
+   color: var(--color-background-black);
 }
 
 .--logo-form {
