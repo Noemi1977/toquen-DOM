@@ -19,11 +19,11 @@ const telephone= document.getElementById("telephone")
 
 telephone.addEventListener("input", function(){
   const numberEstructure= /^[0-9]*$/
-  if(!numberEstructuremberEstructure.test(this.value)){
-    this.setCustomValidity("Solo se permiten numeros del 0 al 9")
-  }else{
-    this.setCustomValidity("")
-  }
+  if (!numberEstructure.test(this.value)) { 
+this.setCustomValidity("Solo se permiten números del 0 al 9");
+} else {
+this.setCustomValidity("");
+}
 })
 
 
