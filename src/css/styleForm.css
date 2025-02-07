@@ -25,9 +25,10 @@
 body, html{
    background-color: var(--color-background-white); 
    color: var(--color-background-black);
-   font-size: var(--font-size-h3);
+   font-size: var(--font-size-p);
    line-height: 1.5;
    height: 100%;
+   margin: 0;
 }
 
 /* HEADER - NAV */
@@ -138,7 +139,8 @@ form {
    align-items: flex-start; /* Alinea a la izquierda */
    margin-left: 100px; /* Aplica margen a todo el bloque */
    width: 90%; /* Ajusta el ancho del contenedor */
-   max-width: 700px; /* Limita el ancho máximo */
+   max-width: 500px; /* Limita el ancho máximo */
+   font-size: var(--font-size-h3);
 }
 
 input {
@@ -155,14 +157,14 @@ input {
 }
 
 label {
-   font-size: 24px;
+   font-size: var(--font-size-h5);
    margin-top: 10px;
    font-family: var(--font-primary);
 }
 
 input::placeholder {
-   font-size: 24px; 
-   color:var(--color-background-grey) 
+   font-size: var(--font-size-h5); 
+   color:var(--color-background-grey);
 }
 
 #mensaje {
