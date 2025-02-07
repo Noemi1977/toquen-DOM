@@ -353,6 +353,7 @@
         align-items: center;
         justify-self: center;
     }
+    
 }
 
 @media (min-width: 768px) and (max-width: 1000px) {
@@ -401,6 +402,16 @@
         align-items: center;
         justify-self: center;
     }
+
+   .input-container {
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       margin-left: 10%;
+       width: 90%;
+       max-width: 300px;
+   }
+   
 }
 
 #--contacto-contenedor {
