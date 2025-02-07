@@ -67,6 +67,7 @@
 
     /* ADAPTATION */
     @media (max-width: 768px) {
+    
         .nav-links {
             display: none;
             flex-direction: column;
@@ -78,6 +79,8 @@
             padding: 20px 0;
             text-align: center;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 2;
+            
         }
 
         .nav-links.active {
@@ -352,6 +355,8 @@
         align-items: center;
         justify-self: center;
     }
+
+    
 }
 
 @media (min-width: 768px) and (max-width: 1000px) {
@@ -400,6 +405,16 @@
         align-items: center;
         justify-self: center;
     }
+
+   .input-container {
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       margin-left: 10%;
+       width: 90%;
+       max-width: 300px;
+   }
+   
 }
 
 #--contacto-contenedor {
@@ -434,19 +449,21 @@
     align-items: center; /* Centra los inputs */
     width: 100%;/*Ocupará el ancho del contenedor*/
     overflow-x: hidden; 
+    
+
  }
  .input-container{
     display: flex;
     flex-direction: column; /* Pone el label arriba del input */
     align-items: flex-start; /* Alinea a la izquierda */
-    margin-left: 100px; /* Aplica margen a todo el bloque */
+    margin: 0; /* Aplica margen a todo el bloque */
     width: 90%; /* Ajusta el ancho del contenedor */
-    max-width: 700px; /* Limita el ancho máximo */
+    max-width: 500px; /* Limita el ancho máximo */
  }
  
  input {
     width: 100%; /* Ajustable para pantallas más pequeñas */
-    max-width: 700px; /* No excede el ancho definido */
+    max-width: 500px; /* No excede el ancho definido */
     height: 86px;
     border-radius: 10px;
     padding: 10px;
@@ -458,13 +475,13 @@
  }
  
  label {
-    font-size: 24px;
+    font-size: var(--font-size-h5);
     margin-top: 10px;
     font-family: var(--font-primary);
  }
  
  input::placeholder {
-    font-size: 24px; 
+    font-size: var(--font-size-h5);
     color:var(--color-background-grey) 
  }
  
@@ -475,26 +492,27 @@
     margin-bottom: 65px;
  }
  
- .--form-button {
+.--form-button {
     font-family: var(--font-primary);
-    background-color:  var(--color-background-white);
-    color: black;
-    border: 2px solid var(--color-bottom-stroke);
+    background-color: var(--color-bottoms);
+    color: var(--color-background-black);
+    border: 2px solid var(--color-bottoms);
     border-radius: 10 px;
     max-width: 100px;
     font-size: 18px;
     transition: 0.3s;
     margin-top: 20px;
-    cursor:pointer;
+    cursor: pointer;
     text-align: center;
     width: 138px;
     height: 40px;
- 
- }
- .--form-button:hover {
-    background-color: var(--color-bottom-stroke);
-        color: var(--color-background-white);
- }
+    margin-bottom: 80px;
+
+}
+.--form-button:hover {
+    background-color: var(--color-background-white);
+    color: var(--color-background-black);
+}
  
  
  #ok-mesaje{

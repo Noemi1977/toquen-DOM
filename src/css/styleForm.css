@@ -137,12 +137,12 @@ form {
    align-items: flex-start; /* Alinea a la izquierda */
    margin-left: 100px; /* Aplica margen a todo el bloque */
    width: 90%; /* Ajusta el ancho del contenedor */
-   max-width: 700px; /* Limita el ancho máximo */
+   max-width: 500px; /* Limita el ancho máximo */
 }
 
 input {
    width: 100%; /* Ajustable para pantallas más pequeñas */
-   max-width: 700px; /* No excede el ancho definido */
+   max-width: 500px; /* No excede el ancho definido */
    height: 86px;
    border-radius: 10px;
    padding: 10px;
