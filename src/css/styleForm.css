@@ -25,9 +25,10 @@
 body, html{
    background-color: var(--color-background-white); 
    color: var(--color-background-black);
-   font-size: 24px;
+   font-size: var(--font-size-p);
    line-height: 1.5;
    height: 100%;
+   margin: 0;
 }
 
 /* HEADER - NAV */
@@ -80,23 +81,24 @@ body, html{
 }
 
 /*LINKS BARRA DE NAVEGACION*/
-.--nav-links {
+.nav-links {
    list-style: none;
    display: flex;
    gap: 60px;
 }
 
-.--nav-links li a {
+.nav-links li a {
    text-decoration: none;
    color: var(--color-background-black);
    font-weight:normal;
    transition: color 0.3s;
 }
 
-.--nav-links li a:hover {
+.nav-links li a:hover {
    color: var(--color-bottom-stroke);
 }
 
+/*MAIN PART*/
 
  #--contacto-contenedor {
    width: 80%; /* Para que se adapte mejor a distintos tamaños de pantalla */
@@ -112,7 +114,7 @@ body, html{
 
 h2{
    font-family: var(--font-secondary);
-   /* font-size: 36px; */
+   font-size: var(--font-size-h2);
 }
 
 
@@ -138,6 +140,7 @@ form {
    margin-left: 100px; /* Aplica margen a todo el bloque */
    width: 90%; /* Ajusta el ancho del contenedor */
    max-width: 500px; /* Limita el ancho máximo */
+   font-size: var(--font-size-h3);
 }
 
 input {
@@ -154,14 +157,14 @@ input {
 }
 
 label {
-   font-size: 24px;
+   font-size: var(--font-size-h5);
    margin-top: 10px;
    font-family: var(--font-primary);
 }
 
 input::placeholder {
-   font-size: 24px; 
-   color:var(--color-background-grey) 
+   font-size: var(--font-size-h5); 
+   color:var(--color-background-grey);
 }
 
 #mensaje {
@@ -173,23 +176,23 @@ input::placeholder {
 
 .--form-button {
    font-family: var(--font-primary);
-   background-color:  var(--color-background-white);
-   color: black;
-   border: 2px solid var(--color-bottom-stroke);
+   background-color:  var(--color-bottoms);
+   color: var(--color-background-black);
+   border: 2px solid var(--color-bottoms);
    border-radius: 10 px;
    max-width: 100px;
    font-size: 18px;
    transition: 0.3s;
    margin-top: 20px;
-   cursor:pointer;
+   cursor: pointer;
    text-align: center;
    width: 138px;
    height: 40px;
 
 }
 .--form-button:hover {
-   background-color: var(--color-bottom-stroke);
-       color: var(--color-background-white);
+   background-color: var(--color-background-white);
+   color: var(--color-background-black);
 }
 
 .--logo-form {
@@ -279,11 +282,16 @@ input::placeholder {
        height: 80px;
    }
 
-   .--nav-links {
+   .nav-links {
        flex-direction: column; /* Alineo los links en una columna */
        gap: 20px;
        text-align: center;
+       display: none;
    }
+      .nav-links.active {
+      display: block;
+
+      }
 
    /* Modificar tamaño de la fuente en los inputs */
    input {
@@ -292,7 +300,7 @@ input::placeholder {
 
    /* Ajustar márgenes y tamaños de los formularios */
    .input-container {
-       width: 100%; /* Los campos del formulario ocupan el 100% */
+       width: 90%; /* Los campos del formulario ocupan el 100% */
        margin-left: 0; /* Eliminar márgenes laterales */
    }
 
@@ -334,17 +342,22 @@ input::placeholder {
 }
 
 /* Pantallas grandes (tabletas y PCs) */
-@media (min-width: 769px) {
+@media (min-width: 768px) and (max-width: 1200px) {
    /* Logo y enlaces del header */
    .--logo-nav {
        width: 150px;
        height: 120px;
    }
 
-   .--nav-links {
+   .nav-links {
        flex-direction: row;
        gap: 60px;
+      display: none;
    }
+      .nav-links.active {
+         display: block;
+   
+      }
 
    .input-container {
        width: 90%; /* Usar el 90% del ancho en pantallas más grandes */
