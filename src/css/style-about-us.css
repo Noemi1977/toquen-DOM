@@ -93,74 +93,74 @@
   }
 
 
- /* === ОБЩИЕ СТИЛИ === */
+ 
  body {
-    font-family: Arial, sans-serif; /* Устанавливаем основной шрифт */
-    margin: 0; /* Убираем внешние отступы */
-    padding: 0; /* Убираем внутренние отступы */
-    color: #000; /* Цвет текста - черный */
-    background: white; /* Фон страницы */
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    color: #000; 
+    background: white; 
  }
  
  
  .section-title {
-    text-align: center; /* Выравнивание заголовков по центру */
-    font-size: 2em; /* Размер шрифта заголовка */
-    margin: 40px 0; /* Отступ сверху и снизу */
+    text-align: center; 
+    font-size: 2em; 
+    margin: 40px 0; 
     font-family: var(--font-secondary);
  }
  
  
- /* === СЕКЦИЯ "О НАС" === */
+ /*ABOUT US*/
  .about {
-    padding: 5px; /* Внутренний отступ */
-    max-width: 700px; /* Максимальная ширина контейнера */
-    margin: 0 auto; /* Центрирование контейнера */
+    padding: 5px; 
+    max-width: 700px; 
+    margin: 0 auto; 
     font-family: var(--font-primary);
  }
  
  
  .about-content {
-    display: flex; /* Размещаем колонки в ряд */
-    gap: 95px; /* Расстояние между колонками */
+    display: flex; 
+    gap: 95px; 
  }
  
  
  .about-column {
-    flex: 1; /* Колонки занимают равное пространство */
-    text-align: justify; /* Выравнивание текста по ширине */
+    flex: 1; 
+    text-align: justify; 
  }
  
  
- /* === СЕКЦИЯ "НАШИ ПРЕПОДАВАТЕЛИ" === */
+ /* NUESTRAS PROFESORAS */
  .teachers {
-    padding: 40px 0; /* Отступы сверху и снизу */
+    padding: 40px 0; 
     background: white;
  }
  
  
- /* Контейнер для каждого учителя с использованием Flexbox */
+ 
  .teacher-container {
-    width: 700px; /* Фиксированная ширина контейнера */
-    display: flex; /* Используем Flexbox для двух колонок */
-    flex-direction: row; /* Элементы располагаются в одну строку */
-    align-items: center; /* Выравнивание по высоте */
-    margin: 20px auto; /* Центрирование контейнера и отступы сверху/снизу */
-    padding: 20px; /* Внутренние отступы */
-    box-sizing: border-box; /* Учет внутренних отступов в ширине */
-    gap: 95px; /* Добавляет px пространства между элементами */
+    width: 700px; 
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    margin: 20px auto; 
+    padding: 20px; 
+    box-sizing: border-box; 
+    gap: 95px; 
  }
  
  
- /* При наличии класса reverse меняем визуальный порядок элементов */
+
  .teacher-container.reverse {
     flex-direction: row-reverse;
  }
  
  
- /* Стили для области с фотографией */
+ 
  .teacher-photo {
-    flex: 1; /* Занимает равную часть */
+    flex: 1; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -168,32 +168,32 @@
  
  
  .teacher-photo img {
-    width: 250px; /* Фиксированная ширина изображения */
-    height: 250px; /* Фиксированная высота изображения */
-    border-radius: 50%; /* Круглое изображение */
-    object-fit: cover; /* Изображение подгоняется по контейнеру с обрезкой лишнего */
+    width: 250px; 
+    height: 250px; 
+    border-radius: 50%; 
+    object-fit: cover; 
     border: none;
     display: block;
  }
  
  
- /* Стили для текстовой информации */
+ 
  .teacher-info {
-    flex: 1; /* Занимает равную часть */
-    padding: 0 0px; /* Внутренний отступ слева и справа */
+    flex: 1; 
+    padding: 0 0px; 
     text-align: left;
     font-family: var(--font-primary);
  }
  
  
  .teacher-info h3 {
-    margin: 0 0 10px; /* Отступы у заголовка */
-    font-size: 1.5em; /* Размер шрифта заголовка */
+    margin: 0 0 10px; 
+    font-size: 1.5em; 
     font-family: var(--font-primary);
  }
  
  
- /* === АДАПТИВНОСТЬ === */
+ /*ADAPTACION*/
  @media (max-width: 768px) {
     .about-content {
       display: flex;  
@@ -206,7 +206,7 @@
  
     .teacher-container {
         width: 100%;
-        flex-direction: column; /* При узком экране располагаем элементы вертикально */
+        flex-direction: column; 
         text-align: center;
       margin-left: 10%;
          margin-right: 10%;
